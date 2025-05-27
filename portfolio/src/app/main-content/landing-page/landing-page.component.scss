@@ -58,9 +58,9 @@
   min-height: 300px;
 
   > img {
-    width: 66px;
-    height: 73px;
-    margin-bottom: 16px;
+    width: 106px;
+    height: 113px;
+    
   }
   .nameField {
     font-size: 42px;
@@ -83,7 +83,7 @@
 .socialLinks {
   position: absolute;
   right: 48px;
-  top: 10%; 
+  top: 25%; 
   transform: translateY(-40%);
   display: flex;
   flex-direction: column;

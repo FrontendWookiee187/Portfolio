@@ -34,7 +34,11 @@
 
     >img{
         width: auto;
-        height: 58px
+        max-width: 120px;
+        height: 58px;
+      object-fit: contain;
+      display: block;
+
     }
 }
 
@@ -43,7 +47,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 50%; 
-    margin: 0 40px;
+    
     font-family: 'Josefin Sans';
     font-weight: 500;
 }

@@ -1,44 +1,98 @@
-section{
-    height: 100vh;
+.heroSection {
+  height: 100vh;
+  width: 100vw;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+}
+
+.pictureAndName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  gap: 48px;
+}
+
+.picture {
+  position: relative;
+  width: 350px;    
+  height: 450px;   
+  min-width: 350px;
+
+  .shape, .subjectPic {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+    height: 100%;
+    object-fit: contain;
+  }
+  .shape {
+    z-index: 1;
+     transform: scale(2); 
+  left: -8%;
+  top: 10%;
+  background: none;
+  }
+  .subjectPic {
+    z-index: 2;
+    background: none;
+    width: 450px;
+    height: 550px;
+    left: -12%;
+  }
 }
 
-h1{
-    color: white;
-}
+.nameAndJobname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-left: 5%;
+  min-height: 300px;
 
-h2{
-    color: white;
-}
-
-div{
-    width: 100%;
-    color: white;
-    
-}
-
-.pictureAndName{
-    margin-top: 20%;
-    display: flex;
-    flex-direction: row;
-}
-
-.nameAndJobname{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.nameField{
+  > img {
+    width: 66px;
+    height: 73px;
+    margin-bottom: 16px;
+  }
+  .nameField {
     font-size: 42px;
-    
+    font-family: 'Anta', sans-serif;
+    color: #fff;
+    line-height: 1;
+    text-align: center; 
+  }
+  .jobNameField {
+    font-size: 32px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    font-weight: 400;
+    text-align: center; 
+  }
 }
 
-.jobNameField{
-    font-size: 24px;
-}
+.socialLinks {
+  position: absolute;
+  right: 48px;
+  top: 10%; 
+  transform: translateY(-40%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
+  > div > img {
+    width: 32px;
+    height: 32px;
+  }
+}

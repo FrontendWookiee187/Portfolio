@@ -1,0 +1,52 @@
+* {
+  background: none;
+}
+
+:host {
+  background: none;
+  background-color: #89bcd9;
+  display: block;
+  width: 100%;
+  max-width: 1200px; // gleiche max-width wie .pictureAndName
+  height: 86px;
+  margin: 0 auto;
+  margin-top: -26%;
+  position: relative;
+  z-index: 20;
+}
+
+.navbar-content {
+  background: none;
+  background-color: #89bcd9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 32px;
+
+    >img{
+        width: 58px;
+        height: 72px;
+    }
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%; 
+    margin: 0 40px;
+}
+
+.languageSwitch{
+    display: flex;
+    flex-direction: row;
+    padding-right: 32px;
+}

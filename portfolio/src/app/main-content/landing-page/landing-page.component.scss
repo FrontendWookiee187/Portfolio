@@ -7,6 +7,7 @@
   align-items: stretch;
   position: relative;
   overflow: hidden;
+  margin-bottom: 0.7%;
 }
 
 .pictureAndName {
@@ -52,6 +53,7 @@
 }
 
 .nameAndJobname {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,4 +97,14 @@
     width: 32px;
     height: 32px;
   }
+}
+
+
+.arrowDown{
+  position: absolute;
+  left: 50%;
+  bottom: -45%;
+  transform: translateX(-50%);
+  width: 38px;
+  height: 89px;
 }

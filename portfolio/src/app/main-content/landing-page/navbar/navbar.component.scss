@@ -18,9 +18,11 @@
   background: none;
   background-color: #89bcd9;
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   
 }
 
@@ -31,8 +33,8 @@
     padding-left: 32px;
 
     >img{
-        width: 58px;
-        height: 72px;
+        width: auto;
+        height: 58px
     }
 }
 
@@ -42,10 +44,14 @@
     justify-content: space-between;
     width: 50%; 
     margin: 0 40px;
+    font-family: 'Josefin Sans';
+    font-weight: 500;
 }
 
 .languageSwitch{
     display: flex;
     flex-direction: row;
     padding-right: 32px;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
 }

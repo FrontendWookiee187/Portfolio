@@ -12,10 +12,59 @@ h1{
     color: #89BCD9;
     font-family: 'Anta';
     font-size: 42px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 
 }
 
+.whyMeContent{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.locationAndSelf{
+  display: flex;
+  flex-direction: row;
+  gap: 62px;
+}
+
 .location{
+  height: 53px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
+    color: white;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    white-space: nowrap;
+      >img{
+        width: 64px;
+        height: 53px;
+        align-self: center;
+        
+      }
+}
+
+.iamLocated,
+  span {
+    align-self: center; // Text bleibt auf der gleichen Höhe wie das Bild
+  }
+
+.iamLocated{
+  color: #89BCD9;
+  font-weight: 700;
+}
+
+.self{
+  color: white;
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6; 
+  word-wrap: break-word; 
+  white-space: normal; 
+  max-width: 400px; 
+  text-align: left; 
 }

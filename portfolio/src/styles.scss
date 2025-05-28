@@ -7,6 +7,10 @@
     background-image: url(./assets/img/Background.png);
 }
 
+body{
+  padding: 0 12px;
+}
+
 /* anta-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

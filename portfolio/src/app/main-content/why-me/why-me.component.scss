@@ -58,6 +58,8 @@ h1{
 }
 
 .self{
+  display: flex;
+  flex-direction: column;
   color: white;
   font-family: 'Josefin Sans';
   font-weight: 400;
@@ -67,4 +69,10 @@ h1{
   white-space: normal; 
   max-width: 400px; 
   text-align: left; 
+  align-items: end;
+    >img{
+      margin-top: 18px;
+      height: 54px;
+      width: 134px;
+    }
 }

@@ -133,10 +133,20 @@
   display: none;
   flex-direction: column;
   background: #2a3238;
+  
 }
 
-.projectOne{
+.projectOne
+{
     background: #2a3238;
+    margin-bottom: -35px;
+}
+
+.projectTwo,
+.projectThree,
+.projectFour{
+    
+margin-bottom: -35px;
 }
 
 

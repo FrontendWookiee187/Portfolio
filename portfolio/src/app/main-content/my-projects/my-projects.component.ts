@@ -100,6 +100,8 @@ switchProjectFour(){
       this.projectThree.nativeElement.style.background = 'none';
       this.contentProjectFour.nativeElement.style.display = 'flex';
       this.projectFour.nativeElement.style.background = '#2a3238';
+      
+      
 
   }
 }

@@ -121,6 +121,15 @@
   
 }
 
+.contentProjectTwo,
+.contentProjectThree,
+ .contentProjectFour{
+  flex: 1 0 0;
+  display: none;
+  flex-direction: column;
+  background: #2a3238;
+}
+
 
 
 

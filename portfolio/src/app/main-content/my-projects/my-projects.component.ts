@@ -26,7 +26,7 @@ export class MyProjectsComponent {
 
  
  
- switchProjectOne(){
+ switchProjectOne(): void {
     if (this.visableProjectTwo || this.visableProjectThree || this.visableProjectFour) {
       this.visableProjectOne = true;
       this.visableProjectThree = false;
@@ -47,7 +47,7 @@ export class MyProjectsComponent {
  
  
  
-  switchProjectTwo(){
+  switchProjectTwo(): void {
     if (this.visableProjectOne || this.visableProjectThree || this.visableProjectFour) {
       this.visableProjectOne = false;
       this.visableProjectThree = false;
@@ -66,7 +66,7 @@ export class MyProjectsComponent {
   }
 }
 
-switchProjectThree(){
+switchProjectThree(): void {
     if (this.visableProjectOne || this.visableProjectTwo || this.visableProjectFour) {
       this.visableProjectOne = false;
       this.visableProjectThree = true;
@@ -85,7 +85,7 @@ switchProjectThree(){
   }
 }
 
-switchProjectFour(){
+switchProjectFour(): void {
     if (this.visableProjectOne || this.visableProjectTwo || this.visableProjectThree) {
       this.visableProjectOne = false;
       this.visableProjectThree = true;

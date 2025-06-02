@@ -34,9 +34,13 @@ export class MyProjectsComponent {
       this.visableProjectTwo = false;
 
       this.contentProjectOne.nativeElement.style.display = 'flex';
-      this.contentProjectTwo.nativeElement.style.display = 'none';      
+      this.projectOne.nativeElement.style.background = '#2a3238';
+      this.contentProjectTwo.nativeElement.style.display = 'none';
+      this.projectTwo.nativeElement.style.background = 'none';      
       this.contentProjectThree.nativeElement.style.display = 'none';
+      this.projectThree.nativeElement.style.background = 'none';
       this.contentProjectFour.nativeElement.style.display = 'none';
+      this.projectFour.nativeElement.style.background = 'none';
 
   }
 }
@@ -70,9 +74,13 @@ switchProjectThree(){
       this.visableProjectTwo = false;
 
       this.contentProjectOne.nativeElement.style.display = 'none';
+      this.projectOne.nativeElement.style.background = 'none';
       this.contentProjectTwo.nativeElement.style.display = 'none';      
+      this.projectTwo.nativeElement.style.background = 'none';
       this.contentProjectThree.nativeElement.style.display = 'flex';
+      this.projectThree.nativeElement.style.background = '#2a3238';
       this.contentProjectFour.nativeElement.style.display = 'none';
+      this.projectFour.nativeElement.style.background = 'none';
 
   }
 }
@@ -85,9 +93,13 @@ switchProjectFour(){
       this.visableProjectTwo = false;
 
       this.contentProjectOne.nativeElement.style.display = 'none';
-      this.contentProjectTwo.nativeElement.style.display = 'none';      
+      this.projectOne.nativeElement.style.background = 'none';
+      this.contentProjectTwo.nativeElement.style.display = 'none'; 
+      this.projectTwo.nativeElement.style.background = 'none';     
       this.contentProjectThree.nativeElement.style.display = 'none';
+      this.projectThree.nativeElement.style.background = 'none';
       this.contentProjectFour.nativeElement.style.display = 'flex';
+      this.projectFour.nativeElement.style.background = '#2a3238';
 
   }
 }

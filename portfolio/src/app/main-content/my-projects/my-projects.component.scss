@@ -79,12 +79,14 @@
 
 .aboutSection {
   margin-bottom: 32px;
+  background: transparent;
 }
 
 .aboutRow {
   display: flex;
   align-items: center;
   gap: 18px;
+  background: transparent;
   
 }
 
@@ -101,6 +103,7 @@
   font-weight: 700;
   display: flex;
   align-items: center;
+  background: transparent;
   
 }
 
@@ -117,7 +120,7 @@
   margin: 0 0 0 47px;
   font-weight: 400;
   font-family: "Josefin Sans";
-  background-image: none !important;
+  background: transparent;
   
 }
 

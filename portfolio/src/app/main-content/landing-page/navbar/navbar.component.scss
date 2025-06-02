@@ -69,3 +69,10 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.links a:link,
+.links a:visited,
+.links a:active {
+  color: inherit;
+  text-decoration: none;
+}

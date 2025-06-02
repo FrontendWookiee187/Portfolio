@@ -22,9 +22,7 @@ export class MyProjectsComponent {
   visableProjectOne = true;
   visableProjectTwo = false;
   visableProjectThree = false;
-  visableProjectFour = false;
-
- 
+  visableProjectFour = false; 
  
  switchProjectOne(): void {
     if (this.visableProjectTwo || this.visableProjectThree || this.visableProjectFour) {
@@ -43,9 +41,7 @@ export class MyProjectsComponent {
       this.projectFour.nativeElement.style.background = 'none';
 
   }
-}
- 
- 
+} 
  
   switchProjectTwo(): void {
     if (this.visableProjectOne || this.visableProjectThree || this.visableProjectFour) {
@@ -99,11 +95,8 @@ switchProjectFour(): void {
       this.contentProjectThree.nativeElement.style.display = 'none';
       this.projectThree.nativeElement.style.background = 'none';
       this.contentProjectFour.nativeElement.style.display = 'flex';
-      this.projectFour.nativeElement.style.background = '#2a3238';
+      this.projectFour.nativeElement.style.background = '#2a3238';     
       
-      
-
+    }
   }
-}
-
 }

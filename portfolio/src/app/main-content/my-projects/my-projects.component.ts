@@ -14,6 +14,10 @@ export class MyProjectsComponent {
   @ViewChild('contentProjectTwo') contentProjectTwo!: ElementRef<HTMLDivElement>;
   @ViewChild('contentProjectThree') contentProjectThree!: ElementRef<HTMLDivElement>;
   @ViewChild('contentProjectFour') contentProjectFour!: ElementRef<HTMLDivElement>;
+  @ViewChild('projectOne') projectOne!: ElementRef<HTMLDivElement>;
+  @ViewChild('projectTwo') projectTwo!: ElementRef<HTMLDivElement>;
+  @ViewChild('projectThree') projectThree!: ElementRef<HTMLDivElement>;
+  @ViewChild('projectFour') projectFour!: ElementRef<HTMLDivElement>;
 
   visableProjectOne = true;
   visableProjectTwo = false;
@@ -47,9 +51,13 @@ export class MyProjectsComponent {
       this.visableProjectTwo = true;
 
       this.contentProjectOne.nativeElement.style.display = 'none';
-      this.contentProjectTwo.nativeElement.style.display = 'flex';      
+      this.projectOne.nativeElement.style.background = 'none';
+      this.contentProjectTwo.nativeElement.style.display = 'flex';
+      this.projectTwo.nativeElement.style.background ='#2a3238';      
       this.contentProjectThree.nativeElement.style.display = 'none';
+      this.projectThree.nativeElement.style.background = 'none';
       this.contentProjectFour.nativeElement.style.display = 'none';
+      this.projectFour.nativeElement.style.background = 'none';
 
   }
 }

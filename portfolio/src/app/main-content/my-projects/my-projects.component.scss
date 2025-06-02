@@ -29,9 +29,7 @@
     display: flex;
     justify-content: center;
     gap: 48px;
-    margin-bottom: 32px;
-    > div {
-  background: transparent;}
+    
     
 
     > div {
@@ -43,8 +41,10 @@
       
       cursor: pointer;
       transition: background 0.2s, color 0.2s;
+      position: relative;
+    z-index: 2; // <- Damit der Tab über .aboutProject liegt
 
-      &.active {
+      div.active {
         background: #2a3238;
         color: #fff;
         font-weight: 700;
@@ -67,6 +67,8 @@
   gap: 48px;
   min-height: 400px;
   background-image: none !important;
+  position: relative;
+  z-index: 1;
   
 }
 
@@ -131,6 +133,10 @@
   display: none;
   flex-direction: column;
   background: #2a3238;
+}
+
+.projectOne{
+    background: #2a3238;
 }
 
 

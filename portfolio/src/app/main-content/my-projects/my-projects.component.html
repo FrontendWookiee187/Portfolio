@@ -4,14 +4,14 @@
 
     <div class="myProjectsContent">
       <div class="myProjectsHeadlines">
-        <div class="projectOne" (click)="switchProjectOne()">1</div>
-        <div class="projectTwo" (click)="switchProjectTwo()">2</div>
-        <div class="projectThree" (click)="switchProjectThree()">3</div>
-        <div class="projectFour" (click)="switchProjectFour()">4</div>
+        <div class="projectOne" #projectOne  (click)="switchProjectOne()">1</div>
+        <div class="projectTwo" #projectTwo (click)="switchProjectTwo()">2</div>
+        <div class="projectThree" #projectThree (click)="switchProjectThree()">3</div>
+        <div class="projectFour" #projectFour (click)="switchProjectFour()">4</div>
       </div>
 
       <div class="aboutProject">
-        
+
         <div class="contentProjectOne" #contentProjectOne>
           <div class="aboutSection">
             <div class="aboutRow">

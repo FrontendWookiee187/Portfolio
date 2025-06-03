@@ -1,7 +1,6 @@
 .myProjects {
   background: #232b30;
-  min-height: 100vh;
-  padding-bottom: 32px;
+  
 
   h1 {
     color: #89bcd9;
@@ -82,6 +81,7 @@
   align-items: center;
   gap: 18px;
   background: transparent;
+  margin-bottom: 8px;
 }
 
 .ellipseIcon {
@@ -144,6 +144,7 @@
   min-width: 320px;
   max-width: 480px;
   background: transparent;
+  margin-left: 24px;
 
   .technologies {
     display: flex;
@@ -177,7 +178,7 @@
   }
 
   .projectScreenshot {
-    flex: 1 1 185px;
+    flex: 0 1 185px;
     min-width: 300px;
     max-width: 500px;
     background: transparent;

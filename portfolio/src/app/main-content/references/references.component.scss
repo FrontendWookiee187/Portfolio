@@ -1,0 +1,85 @@
+.references {
+  
+  padding: 48px 0 64px 0;
+
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #89BCD9;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 56px;
+    margin-top: 0;
+  }
+
+  .referencesContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+
+  .referenceBubble {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .referenceBubble img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .referenceText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+  }
+
+  .referenceName {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    background: transparent;
+  }
+
+  .referenceProject {
+    font-size: 16px;
+    color: #89BCD9;
+    margin-bottom: 18px;
+    background: transparent;
+  }
+
+  .referenceQuote {
+    font-size: 16px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    background: transparent;
+  }
+
+  .referenceLink {
+    color: #89BCD9;
+    font-size: 15px;
+    text-decoration: underline;
+    transition: color 0.2s;
+    background: transparent;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+

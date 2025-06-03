@@ -40,7 +40,7 @@
       cursor: pointer;
       transition: background 0.2s, color 0.2s;
       position: relative;
-      z-index: 2; // <- Damit der Tab über .aboutProject liegt
+      z-index: 1; 
 
       div.active {
         background: #2a3238;
@@ -62,13 +62,13 @@
   min-height: 400px;
   background-image: none !important;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .contentProjectOne {
   flex: 1 0 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: #2a3238;
 }
 
@@ -134,4 +134,97 @@
 .projectThree,
 .projectFour {
   margin-bottom: -35px;
+}
+
+.technologiesAndScreenshot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 480px;
+  background: transparent;
+
+  .technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 160px;
+    background: transparent;
+
+    .techHeadline {
+      color: #fff;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-align: center;
+      background: transparent;
+    }
+
+    .techIcons {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      background: transparent;
+
+      img {
+        height: 40px;
+        width: auto;
+        background: transparent;
+      }
+    }
+  }
+
+  .projectScreenshot {
+    flex: 1 1 185px;
+    min-width: 300px;
+    max-width: 500px;
+    background: transparent;
+    border-radius: 16px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: contain;
+    }
+  }
+
+  .testAndGitLinks {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
+    margin-top: 24px;
+    background: transparent;
+
+    button, a {
+      background: #89bcd9;
+      color: #232b30;
+      border: none;
+      border-radius: 24px;
+      padding: 12px 32px;
+      font-size: 18px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+
+      &:hover {
+        background: #fff;
+        color: #2a3238;
+      }
+    }
+  }
+}
+
+.projectText {
+  flex: 2 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: transparent;
 }

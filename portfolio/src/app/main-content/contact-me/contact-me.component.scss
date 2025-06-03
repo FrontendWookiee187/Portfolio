@@ -1,0 +1,187 @@
+.contactMe {
+  background: #232b30;
+  padding: 0 0 64px 0;
+  min-height: 0; // kein Mindestabstand nach oben
+
+  .content-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  h1 {
+    font-family: 'Anta', sans-serif;
+    color: #89BCD9;
+    font-size: 42px;
+    text-align: center;
+    margin: 48px 0 32px 0;
+    font-weight: 400;
+  }
+
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contactText {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 420px;
+    margin-bottom: 0;
+    margin-right: 32px;
+    margin-top: 8px;
+    float: left;
+  }
+
+  .mailAndPhone {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 32px;
+
+    .mail, .phone {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+
+  .contactForm {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nameAndMailWrapper {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 0;
+    .yourName, .yourEmail {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      label {
+        color: #89BCD9;
+        font-size: 14px;
+        margin-bottom: 4px;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      input {
+        width: 100%;
+        padding: 10px 18px;
+        border: 2px solid #89BCD9;
+        border-radius: 22px;
+        background: transparent;
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Josefin Sans', sans-serif;
+        outline: none;
+      }
+    }
+  }
+
+  .yourMessage {
+    display: flex;
+    flex-direction: column;
+    label {
+      color: #89BCD9;
+      font-size: 14px;
+      margin-bottom: 4px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    textarea {
+      width: 100%;
+      min-height: 110px;
+      padding: 12px 18px;
+      border: 2px solid #89BCD9;
+      border-radius: 22px;
+      background: transparent;
+      color: #fff;
+      font-size: 16px;
+      font-family: 'Josefin Sans', sans-serif;
+      outline: none;
+      resize: vertical;
+    }
+  }
+
+  .privacyPolicy {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+
+    img {
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+    }
+
+    a {
+      color: #89BCD9;
+      text-decoration: underline;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .sendButton {
+    margin-top: 18px;
+    align-self: flex-end;
+    padding: 8px 32px;
+    border: 2px solid #89BCD9;
+    border-radius: 22px;
+    background: transparent;
+    color: #89BCD9;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    &:hover {
+      background: #89BCD9;
+      color: #232b30;
+    }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  /* Pfeil nach oben */
+  .scrollTop {
+    position: fixed;
+    right: 48px;
+    top: 48px;
+    z-index: 10;
+    cursor: pointer;
+    img {
+      width: 38px;
+      height: 38px;
+      filter: drop-shadow(0 0 6px #89BCD9);
+      transition: filter 0.2s;
+      &:hover {
+        filter: drop-shadow(0 0 12px #fff);
+      }
+    }
+  }
+}
+

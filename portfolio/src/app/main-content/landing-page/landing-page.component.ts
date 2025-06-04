@@ -11,5 +11,10 @@ import { WhyMeComponent } from '../why-me/why-me.component';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
+  isOverlayOpen = false;
+
+  toggleOverlay() {
+    this.isOverlayOpen = !this.isOverlayOpen;
+  }
 
 }

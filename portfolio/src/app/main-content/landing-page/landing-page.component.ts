@@ -12,9 +12,11 @@ import { WhyMeComponent } from '../why-me/why-me.component';
 })
 export class LandingPageComponent {
   isOverlayOpen = false;
+  menuActive = false;
 
   toggleOverlay() {
     this.isOverlayOpen = !this.isOverlayOpen;
+    this.menuActive = !this.menuActive;
   }
 
 }

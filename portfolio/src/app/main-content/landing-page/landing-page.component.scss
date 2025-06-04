@@ -39,12 +39,12 @@
     background: none;
   }
   .subjectPic {
-    position: absolute;   // <--- Diese Zeile entfernen!
+    position: absolute;   
     z-index: 2;
     background: none;
     width: 450px;
     height: 550px;
-    left: -12%;             // ggf. anpassen oder entfernen
+    left: -12%;             
   }
 }
 
@@ -119,50 +119,50 @@
 
 @media (max-width: 900px) {
   .pictureAndName {
-    flex-direction: row; /* Inhalte nebeneinander anzeigen */
-    gap: 16px; /* Reduzierter Abstand zwischen Bild und Text */
-    align-items: center; /* Vertikale Zentrierung */
-    justify-content: center; /* Horizontale Zentrierung */
-    margin-top: 24px; /* Abstand zum oberen Rand */
+    flex-direction: row;
+    gap: 16px; 
+    align-items: center;
+    justify-content: center; 
+    margin-top: 24px;
   }
 
   .picture {
-    width: 250px; /* Reduzierte Breite des Bildes */
-    height: auto; /* Passt die Höhe automatisch an */
-    position: relative; /* Sicherstellen, dass die Positionierung korrekt ist */
-    top: -138px; /* Hebt das Bild an */
+    width: 250px; 
+    height: auto; 
+    position: relative; 
+    top: -138px; 
     .shape {
       position: absolute;
-      left: -18%; /* Positionierung des Shapes anpassen */
-      top: -10%; /* Hebt das Shape an */
+      left: -18%; 
+      top: -10%; 
       width: 100%;
       height: auto;
       object-fit: contain;
-      z-index: 0; /* Shape bleibt hinter dem Bild */
-      transform: scale(1.5); /* Reduzierte Skalierung */
+      z-index: 0; 
+      transform: scale(1.5); 
     }
     .subjectPic {
-      width: 250px; /* Reduzierte Breite des Hauptbildes */
-      height: auto; /* Passt die Höhe automatisch an */
-      left: 0; /* Entfernt die negative Positionierung */
-      z-index: 1; /* Bild bleibt über dem Shape */
+      width: 250px; 
+      height: auto; 
+      left: 0; 
+      z-index: 1; 
     }
   }
 
   .nameAndJobname {
-    margin-left: 0; /* Entfernt den linken Abstand */
-    text-align: center; /* Zentriert den Text */
-    position: relative; /* Sicherstellen, dass der Name über dem Bild bleibt */
-    z-index: 2; /* Name bleibt über dem Bild */
+    margin-left: 0; 
+    text-align: center; 
+    position: relative; 
+    z-index: 2; 
     .nameField {
-      font-size: 28px; /* Reduzierte Schriftgröße */
+      font-size: 28px; 
     }
     .jobNameField {
-      font-size: 24px; /* Reduzierte Schriftgröße */
+      font-size: 24px;
     }
     .arrowDown {
       position: relative;
-      margin-top: 16px; /* Abstand unter der Berufsbezeichnung */
+      margin-top: 16px; 
       margin-bottom: 16px;
       left: 1%;
       transform: translateX(-50%);
@@ -173,16 +173,16 @@
 
   .socialLinks {
      position: absolute;
-    right: 48px; /* Abstand vom rechten Rand */
-    top: 10%; /* Höhe des Logos */
-    transform: none; /* Entfernt die vertikale Transformation */
+    right: 48px; 
+    top: 10%; 
+    transform: none;
     display: flex;
-    flex-direction: column; /* Links bleiben vertikal angeordnet */
-    gap: 12px; /* Reduzierter Abstand zwischen den Links */
+    flex-direction: column; 
+    gap: 12px;
 
      img {
-      width: 24px; /* Verkleinerte Breite der Icons */
-      height: 24px; /* Verkleinerte Höhe der Icons */
+      width: 24px; 
+      height: 24px; 
     }
     
     z-index: 5;
@@ -190,81 +190,81 @@
 
   .socialLinks > div > img,
   .socialLinks > a > img {
-    width: 24px; /* Verkleinerte Breite der Icons */
-    height: 24px; /* Verkleinerte Höhe der Icons */
+    width: 24px; 
+    height: 24px; 
   }
 }
 
 @media (max-width: 775px) {
   .pictureAndName {
-    gap: 12px; /* Reduzierter Abstand zwischen Bild und Text */
-    align-items: center; /* Vertikale Zentrierung */
-    justify-content: center; /* Horizontale Zentrierung */
+    gap: 12px; 
+    align-items: center; 
+    justify-content: center; 
   }
 
   .picture {
-    width: 200px; /* Weitere Reduzierung der Breite des Bildes */
-    height: auto; /* Passt die Höhe automatisch an */
+    width: 200px; 
+    height: auto; 
     position: relative;
     .shape {
       position: absolute;
-      left: -10%; /* Positionierung des Shapes anpassen */
-      top: -5%; /* Hebt das Shape an */
+      left: -10%; 
+      top: -5%; 
       width: 100%;
       height: auto;
       object-fit: contain;
-      z-index: 0; /* Shape bleibt hinter dem Bild */
-      transform: scale(1.3); /* Reduzierte Skalierung */
+      z-index: 0; 
+      transform: scale(1.3); 
     }
     .subjectPic {
-      width: 200px; /* Weitere Reduzierung der Breite des Hauptbildes */
-      height: auto; /* Passt die Höhe automatisch an */
-      left: 50px; /* Entfernt die negative Positionierung */
+      width: 200px; 
+      height: auto; 
+      left: 50px; 
       top: 40px;
-      z-index: 1; /* Bild bleibt über dem Shape */
+      z-index: 1; 
     }
   }
 
   .nameAndJobname {
-    text-align: center; /* Sicherstellen, dass der Text zentriert bleibt */
-    width: 100%; /* Container nimmt die volle Breite ein */
+    text-align: center; 
+    width: 100%; 
     display: block;
     .nameField {
-      font-size: 24px; /* Weitere Reduzierung der Schriftgröße */
+      font-size: 24px; 
       margin-bottom: 18px;
     }
     .jobNameField {
-      display: block; /* Erzwingt, dass die Wörter untereinander stehen */
-      font-size: 20px; /* Weitere Reduzierung der Schriftgröße */
-      text-align: center; /* Zentriert den Text */
-      width: 150px; /* Verkleinert den Container, um einen Umbruch zu erzwingen */
-      margin: 0 auto; /* Zentriert den Container */
-      word-break: break-word; /* Erzwingt den Umbruch bei langen Wörtern */
-      white-space: normal; /* Stellt sicher, dass der Text umbricht */
+      display: block; 
+      font-size: 20px; 
+      text-align: center; 
+      width: 150px; 
+      margin: 0 auto; 
+      word-break: break-word; 
+      white-space: normal; 
     }
     .arrowDown {
-      margin-top: 12px; /* Abstand unter der Berufsbezeichnung */
-    width: 20px; /* Kleinere Breite des Pfeils */    
-    left: 50%; /* Zentriert den Pfeil */
-    transform: translateX(-50%); /* Korrekte Zentrierung */
+      margin-top: 12px; 
+    width: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
         
     }
   }
 
   .socialLinks {
-    right: 32px; /* Reduzierter Abstand vom rechten Rand */
-    top: 8%; /* Höhe des Logos */
-    gap: 8px; /* Reduzierter Abstand zwischen den Links */
+    right: 32px; 
+    top: 8%; 
+    gap: 8px; 
     img {
-      width: 20px; /* Kleinere Breite der Icons */
-      height: 20px; /* Kleinere Höhe der Icons */
+      width: 20px; 
+      height: 20px; 
     }
   }
 
   .socialLinks > div > img,
   .socialLinks > a > img {
-    width: 20px; /* Kleinere Breite der Icons */
-    height: 20px; /* Kleinere Höhe der Icons */
+    width: 20px; 
+    height: 20px; 
   }
 
 }
@@ -272,9 +272,9 @@
 @media (max-width: 630px) {
   .heroSection {
     
-    min-height: 100vh;
+    min-height: auto;
     width: 100vw;
-    padding: 16px 0; // Abstand nach oben
+    padding: 16px 0;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -294,7 +294,7 @@
     position: relative;
     padding-top: 24px;
     padding-bottom: 24px;
-    min-height: 100vh;
+    min-height: auto;
   }
 
   .pictureAndName {
@@ -302,7 +302,7 @@
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    gap: 16px; // Abstand zwischen den Elementen
+    gap: 16px; 
     margin: 0;
     padding: 0;
   }
@@ -318,7 +318,7 @@
     width: 100%;
 
     > img {
-      display: none; // Logo wird oben links platziert
+      display: none; 
     }
     .nameField {
       font-size: 2rem;
@@ -345,7 +345,7 @@
     width: 320px;
     height: 320px;
     min-width: unset;
-    margin: 16px auto; // Abstand unter Name und Jobbezeichnung
+    margin: 16px auto; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -393,11 +393,11 @@
   }
 
   .nameAndJobname .arrowDown {
-    left: 1%; /* Regel für 630px */
+    left: 1%; 
   }
 
   .socialLinks {
-    display: none; // Auf Mobile ausblenden
+    display: none; 
   }
 
   .heroSection::before {
@@ -410,12 +410,12 @@
     background-image: url('./../../../assets/img/hero/logo_dg1.png');
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 25;
   }
 
   .burgerMenu {
   position: absolute;
-  top: 16px;
+  top: 42px;
   right: 16px;
   width: 32px;
   height: 32px;
@@ -424,24 +424,124 @@
   justify-content: space-between;
   cursor: pointer;
   z-index: 100;
-  background-image: none;
 
   span {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #fff; /* Farbe der Linien */
-    border-radius: 2px; /* Abgerundete Ecken */
-    z-index: 10;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  &.active {
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(15px, 15px);
+    }
+    span:nth-child(2) {
+      opacity: 0; 
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
   }
 }
 
 .burgerMenu span {
-  background-color: #00bcd4; /* Beispiel: Helle Farbe, die sich vom Hintergrund abhebt */
+  background-color: white; 
   z-index: 10;
+  background-image: none;
+}
+
+.navbar{
+  display: none;
 }
 
 
+.overlay {
+    position: absolute;
+    top: 41px;
+    left: 150px;
+    width: 350px;
+    height: 366px;
+    background-image: url('./../../../assets/img/hero/Ellipse\ 35.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+   .overlayMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      margin: 16px 0;
+      font-size: 1.5rem;
+      font-family: 'Josefin Sans', sans-serif;
+      color: #fff;
+      background-image: none;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+        background-image: none;
+
+        &:hover {
+          color: #00bcd4; 
+        }
+      }
+    }
+
+    .language-switch {
+      display: flex;
+      gap: 8px;
+      background-image: none;
+
+      a {
+        font-size: 1rem;
+        background-image: none;
+      }
+    }
+  }
+
+  .picture {
+    position: relative;
+    z-index: 1; 
+  }
+
+  .shape,
+  .subjectPic {
+    position: relative;
+    z-index: 1; /* Sicherstellen, dass das Overlay darüber liegt */
+    
+  }
+
+}
+
+@media (min-width: 631px) {
+.burgerMenu{
+  display: none;
+}
 }
 
 

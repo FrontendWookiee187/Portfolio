@@ -1,7 +1,23 @@
-<div class="burgerMenu" (click)="toggleOverlay()">
+<div class="burgerMenu" [class.active]="menuActive" (click)="toggleOverlay()">
   <span></span>
   <span></span>
   <span></span>
+</div>
+
+<div class="overlay" [class.visible]="menuActive">
+
+<ul class="overlayMenu">
+<li><a href="#whyMe">Why me</a></li>
+    <li><a href="#mySkills">Skills</a></li>
+    <li><a href="#myProjects">Projects</a></li>
+    <li><a href="#contactMe">Contact</a></li>
+    <li class="language-switch">
+      <a href="#">DE</a>
+      <a href="#">EN</a>
+    </li>
+</ul>
+
+
 </div>
 
 <section class="heroSection" id="heroSection">
@@ -36,4 +52,4 @@
 
 </section>
 
-<app-navbar></app-navbar>
+<app-navbar class="navbar"></app-navbar>

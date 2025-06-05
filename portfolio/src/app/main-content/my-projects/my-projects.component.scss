@@ -220,7 +220,62 @@
       }
     }
   }
+
+  .testAndGitLinks {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
+    margin-top: 16px;
+    background: transparent;
+
+    button, a {
+      background: #89bcd9;
+      color: #232b30;
+      border: none;
+      border-radius: 24px;
+      padding: 12px 32px;
+      font-size: 18px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+
+      &:hover {
+        background: #fff;
+        color: #2a3238;
+      }
+    }
+  }
+
 }
+
+.testAndGitLinksResponsive {
+    display: none;
+    gap: 24px;
+    justify-content: flex-end;
+    margin-top: 16px;
+    background: transparent;
+
+    button, a {
+      background: #89bcd9;
+      color: #232b30;
+      border: none;
+      border-radius: 24px;
+      padding: 12px 32px;
+      font-size: 18px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+
+      &:hover {
+        background: #fff;
+        color: #2a3238;
+      }
+    }
+  }
 
 .projectText {
   flex: 2 1 0;
@@ -228,4 +283,50 @@
   flex-direction: column;
   justify-content: flex-start;
   background: transparent;
+}
+
+
+@media (max-width: 800px){
+
+  .contentProjectOne,
+  .contentProjectTwo,
+  .contentProjectThree,
+  .contentProjectFour{
+
+    flex-direction: column-reverse;
+    align-items: center;
+
+  }
+
+  .technologiesAndScreenshot{
+
+    margin-bottom: 24px;
+    
+  }
+
+  .testAndGitLinks{
+    display: none !important;
+  }
+
+  .testAndGitLinksResponsive{
+    display: flex;
+  }
+
+  .projectText{
+    align-items: center;
+  }
+
+  .projectOne,
+  .projectTwo,
+  .projectThree,
+  .projectFour{
+
+    font-size: 18px !important;
+    // margin-bottom: 0;
+    z-index: 1;
+  }
+
+  .aboutProject {
+    overflow: hidden;
+  }
 }

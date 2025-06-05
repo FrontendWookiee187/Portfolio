@@ -47,3 +47,95 @@ h1{
           box-sizing: border-box; 
         }
 }
+
+@media (max-width: 800px){
+
+  .mySkillsContent img {
+    width: 308px; /* Verkleinert die Breite der Bilder */
+    height: auto; /* Passt die Höhe proportional an */
+  }
+
+  .skillSet{
+    width: 200px;
+  }
+
+  .skillSet img {
+    width: 40px; /* Verkleinert die Breite der Bilder */
+    height: auto; /* Passt die Höhe proportional an */
+  }
+
+  .skillSet {
+    gap: 12px; /* Reduziert den Abstand zwischen den Bildern */
+  }
+}
+
+@media (max-width: 660px){
+
+  .content-wrapper{
+    margin: 0;
+    margin-top: 16px;
+    margin-right: 8px;
+    max-width: 390px;
+  }
+
+  .mySkillsContent{
+
+    margin-left: 64px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 605px){
+
+  .mySkillsContent img {
+    width: 276px; /* Verkleinert die Breite der Bilder */
+    height: auto; /* Passt die Höhe proportional an */
+  }
+
+  .mySkillsContent{
+    margin: 0;
+  }
+
+  .skillSet{
+    width: 290px;
+  }
+
+  .skillSet img {
+    
+    height: auto; /* Passt die Höhe proportional an */
+  }
+
+  .skillSet {
+    gap: 16px; /* Reduziert den Abstand zwischen den Bildern */
+  }
+
+  .currentlyLearning{
+
+ display: none; 
+
+}
+}
+
+@media (max-width: 490px){
+
+  .mySkills{
+    margin-top: 16px;
+  }
+
+  .mySkillsContent{
+    margin-left: 0;
+  }
+
+  .skillSet img {
+    
+    width: 40px;
+    height: auto; /* Passt die Höhe proportional an */
+  }
+
+  .skillSet{
+    width: 186px;
+  }
+
+  
+
+}

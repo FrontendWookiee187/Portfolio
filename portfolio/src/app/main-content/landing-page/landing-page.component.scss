@@ -316,6 +316,7 @@
     margin: 0;
     min-height: unset;
     width: 100%;
+    top: 54px;
 
     > img {
       display: none; 
@@ -349,7 +350,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 24px;
+    top: 80px;
 
     .shape {
       position: absolute;
@@ -404,7 +405,7 @@
     content: '';
     position: absolute;
     top: 42px;
-    left: 130px;
+    left: 70px;
     width: 64px;
     height: 64px;
     background-image: url('./../../../assets/img/hero/logo_dg1.png');

@@ -77,3 +77,82 @@ h1{
       width: 134px;
     }
 }
+
+@media (max-width: 850px){
+
+.locationAndSelf{
+  flex-direction: column;
+  gap: 36px;
+  margin-right: -50px;
+  
+}
+
+.location {
+    margin-left: -24px; 
+  }
+
+.self{
+  align-items: center;
+  text-align: center;
+}
+
+}
+
+@media (max-width: 515px){
+
+  .content-wrapper {
+    max-width: 390px;
+  }
+
+  h1{
+    font-size: 36px;
+  }
+
+  .locationAndSelf{
+    margin-right: -30px;
+    white-space: unset;
+
+  }
+
+  .location{
+    font-size: 16px ;
+    white-space: unset;
+    margin-left: 8px;
+    >img{
+      width: 32px;
+      height: 40px;
+    }
+  }
+
+  .iamLocated{
+    white-space: nowrap;
+    
+  }
+
+    .self{
+  font-size: 16px;
+  line-height: 1.4; /* Reduziert den Zeilenabstand */
+    max-width: 90%; /* Dynamische Breite, um Platz zu schaffen */
+    text-align: justify; /* Verteilt den Text gleichmäßig */
+    padding: 0 16px; /* Zusätzlicher Abstand vom Rand */
+}
+
+}
+
+@media (max-width: 400px){
+
+  .locationAndSelf{
+    margin-left: 30px;
+
+  }
+
+.iamLocated{
+    white-space: nowrap;
+    margin-top: -17px;
+  }
+
+  .location{
+    width: 300px;
+  }
+
+}

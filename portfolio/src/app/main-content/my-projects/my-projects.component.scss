@@ -324,9 +324,132 @@
     font-size: 18px !important;
     // margin-bottom: 0;
     z-index: 1;
+    padding: 18px 30px !important;
+
   }
 
   .aboutProject {
     overflow: hidden;
   }
 }
+
+@media (max-width: 650px){
+
+  .myProjects .content-wrapper {
+    max-width: 390px;
+  }
+
+  .myProjects .projectOne,
+.myProjects .projectTwo,
+.myProjects .projectThree,
+.myProjects .projectFour {
+  padding: 18px 16px !important;
+}
+
+
+.myProjects .myProjectsHeadlines{
+
+  gap: 1px ;
+
+}
+
+.aboutProject{
+  padding: 0;
+}
+
+.technologiesAndScreenshot{
+  margin: 0;
+}
+
+.testAndGitLinksResponsive{
+  margin-bottom: 8px;
+}
+
+.myProjects h1{
+  font-size: 32px;
+}
+
+.projectScreenshot{
+  margin-bottom: 8px;
+}
+
+.aboutSection h3{
+  font-size: 18px;
+}
+
+
+}
+
+@media (max-width: 440px) {
+  .myProjectsContent {
+    max-width: 100%; /* Verhindert, dass der Inhalt breiter als der Bildschirm wird */
+    padding: 16px; /* Reduziert den Innenabstand */
+    gap: 16px; /* Verringert den Abstand zwischen den Elementen */
+  }
+
+  .myProjects h1 {
+    font-size: 24px; /* Verkleinert die Überschrift */
+    margin: 24px 0; /* Reduziert den Abstand */
+  }
+
+  .aboutProject {
+    flex-direction: column; /* Stapelt die Inhalte vertikal */
+    gap: 16px; /* Verringert den Abstand zwischen den Abschnitten */
+    padding: 24px; /* Reduziert den Innenabstand */
+  }
+
+  .technologiesAndScreenshot {
+    display: flex;
+    flex-direction: column; /* Stapelt die Inhalte vertikal */
+    align-items: center; /* Zentriert die Inhalte horizontal */
+    justify-content: center; /* Zentriert die Inhalte vertikal */
+    gap: 16px; /* Abstand zwischen den Elementen */
+    margin: 0 auto; /* Zentriert den gesamten Container */
+    min-width: 250px;
+    max-width: 100%; /* Verhindert, dass der Container breiter als der Bildschirm wird */
+  }
+
+  .projectScreenshot img {
+    width: 100%; /* Verkleinert das Bild proportional */
+    max-width: 230px; /* Begrenzung der maximalen Breite */
+  }
+
+  .testAndGitLinksResponsive {
+    flex-direction: column; /* Stapelt die Buttons vertikal */
+    gap: 12px; /* Verringert den Abstand zwischen den Buttons */
+    justify-content: center; /* Zentriert die Buttons */
+  }
+
+  .technologies {
+    align-items: center; /* Zentriert die Technologien */
+    gap: 12px; /* Verringert den Abstand zwischen den Icons */
+  }
+
+  .technologiesAndScreenshot .techIcons img {
+    width: auto !important; /* Verkleinert die Icons */
+    height: 50px !important; /* Passt die Höhe proportional an */
+  }
+
+  .aboutSection h3 {
+    font-size: 16px; /* Verkleinert die Überschrift */
+  }
+
+  .aboutSection p {
+    font-size: 14px; /* Verkleinert den Text */
+    margin: 0; /* Entfernt unnötigen Abstand */
+  }
+}
+
+@media (max-width: 390px){
+
+  .projectScreenshot img {
+    max-width: 160px;
+  }
+
+  .technologiesAndScreenshot{
+    min-width: 150px ;
+  }
+
+}
+
+

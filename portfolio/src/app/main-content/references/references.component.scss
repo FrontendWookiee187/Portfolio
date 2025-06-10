@@ -86,3 +86,59 @@
   }
 }
 
+@media (max-width: 570px){
+
+  .references {
+    display: flex;
+    flex-direction: column; /* Stapelt die Inhalte vertikal */
+    align-items: center; /* Zentriert die Inhalte horizontal */
+    justify-content: center; /* Zentriert die Inhalte vertikal */
+    text-align: center; /* Zentriert den Text */
+    padding: 24px; /* Reduziert den Innenabstand */
+    margin-top: 32px;
+  }
+
+  .content-wrapper {
+    max-width: 390px; /* Begrenzung der maximalen Breite */
+    margin: 0 auto; /* Zentriert den Wrapper */
+  }
+
+  .referencesContent {
+    flex-direction: column; /* Stapelt die Inhalte vertikal */
+    gap: 24px; /* Verringert den Abstand zwischen den Elementen */
+    align-items: center; /* Zentriert die Inhalte horizontal */
+  }
+
+  .referenceBubble {
+    width: 100%; /* Passt die Breite an */
+    max-width: 300px; /* Begrenzung der maximalen Breite */
+    margin: 0 auto; /* Zentriert die Blasen */
+  }
+
+  .referenceText {
+    font-size: 14px; /* Verkleinert die Schriftgröße */
+    text-align: center; /* Zentriert den Text innerhalb der Blase */
+  }
+
+  .references h2 {
+    text-align: center; /* Zentriert die gesamte Überschrift */
+    margin-bottom: 24px; /* Reduziert den Abstand */
+  }
+
+  .teamplayer {
+    font-family: 'Anta', sans-serif; /* Schriftart Anta */
+    font-size: 32px; /* Schriftgröße */
+    color: #89BCD9; /* Blau */
+    display: block; /* Stellt sicher, dass es eine eigene Zeile hat */
+  }
+
+  .colleagues {
+    font-family: 'Josefin Sans', sans-serif; /* Schriftart Josefin Sans */
+    font-size: 18px; /* Schriftgröße */
+    color: #fff; /* Weiß */
+    display: block; /* Stellt sicher, dass es eine eigene Zeile hat */
+    margin-top: 8px; /* Abstand zwischen den Zeilen */
+  }
+
+}
+

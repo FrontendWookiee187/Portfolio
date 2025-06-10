@@ -90,54 +90,71 @@
 
   .references {
     display: flex;
-    flex-direction: column; /* Stapelt die Inhalte vertikal */
-    align-items: center; /* Zentriert die Inhalte horizontal */
-    justify-content: center; /* Zentriert die Inhalte vertikal */
-    text-align: center; /* Zentriert den Text */
-    padding: 24px; /* Reduziert den Innenabstand */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 24px; 
     margin-top: 32px;
   }
 
   .content-wrapper {
-    max-width: 390px; /* Begrenzung der maximalen Breite */
-    margin: 0 auto; /* Zentriert den Wrapper */
+    max-width: 390px; 
+    margin: 0 auto; 
   }
 
   .referencesContent {
-    flex-direction: column; /* Stapelt die Inhalte vertikal */
-    gap: 24px; /* Verringert den Abstand zwischen den Elementen */
-    align-items: center; /* Zentriert die Inhalte horizontal */
+    display: flex;
+    flex-direction: row; 
+    gap: 16px; 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    padding-bottom: 16px; 
+  }
+
+  .references .referencesContent{
+
+    flex-wrap: nowrap;
+  }
+
+  .referencesContent::-webkit-scrollbar {
+    display: none; 
   }
 
   .referenceBubble {
-    width: 100%; /* Passt die Breite an */
-    max-width: 300px; /* Begrenzung der maximalen Breite */
-    margin: 0 auto; /* Zentriert die Blasen */
+    flex: 0 0 auto;
+    width: 340px; 
+    height: 340px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
   }
 
   .referenceText {
-    font-size: 14px; /* Verkleinert die Schriftgröße */
-    text-align: center; /* Zentriert den Text innerhalb der Blase */
+    font-size: 14px; 
+    text-align: center; 
   }
 
   .references h2 {
-    text-align: center; /* Zentriert die gesamte Überschrift */
-    margin-bottom: 24px; /* Reduziert den Abstand */
+    text-align: center; 
+    margin-bottom: 24px; 
   }
 
   .teamplayer {
-    font-family: 'Anta', sans-serif; /* Schriftart Anta */
-    font-size: 32px; /* Schriftgröße */
-    color: #89BCD9; /* Blau */
-    display: block; /* Stellt sicher, dass es eine eigene Zeile hat */
+    font-family: 'Anta', sans-serif; 
+    font-size: 32px; 
+    color: #89BCD9; 
+    display: block; 
   }
 
   .colleagues {
-    font-family: 'Josefin Sans', sans-serif; /* Schriftart Josefin Sans */
-    font-size: 18px; /* Schriftgröße */
-    color: #fff; /* Weiß */
-    display: block; /* Stellt sicher, dass es eine eigene Zeile hat */
-    margin-top: 8px; /* Abstand zwischen den Zeilen */
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 18px; 
+    color: #fff; 
+    display: block; 
+    margin-top: 8px; 
   }
 
 }

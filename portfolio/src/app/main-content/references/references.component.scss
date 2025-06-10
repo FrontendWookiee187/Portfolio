@@ -122,6 +122,7 @@
 
     flex-wrap: nowrap;
     justify-content: unset;
+    margin-left: -35px;
   }
 
   .referencesContent::-webkit-scrollbar {
@@ -145,22 +146,45 @@
   .references h2 {
     text-align: center; 
     margin-bottom: 38px; 
+    width: 100%; // <-- Ergänzung für volle Breite
+    display: flex; // <-- Ergänzung für flexibles Zentrieren
+    flex-direction: column;
+    align-items: baseline; // <-- Zentriert den Inhalt horizontal
+    justify-content: center;
   }
 
   .teamplayer {
     font-family: 'Anta', sans-serif; 
-    font-size: 32px; 
+    font-size: 28px; 
     color: #89BCD9; 
     display: block; 
   }
 
   .colleagues {
     font-family: 'Josefin Sans', sans-serif; 
-    font-size: 18px; 
+    font-size: 14px; 
     color: #fff; 
     display: block; 
     margin-top: 8px; 
   }
+
+  .references .referenceName {
+    font-size: 18px;
+  }
+
+  .references .referenceProject {
+    font-size: 14px;
+  }
+
+  .references .referenceQuote {
+    font-size: 14px;
+  }
+
+  .references .referenceLink {
+    font-size: 14px;
+  }
+
+
 
 }
 

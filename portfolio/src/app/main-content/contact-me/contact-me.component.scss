@@ -178,6 +178,104 @@
       cursor: not-allowed;
     }
   }  
+
+  .workTogether{
+    display: none;
+  }
   
+}
+
+
+@media (max-width: 845px) {
+  .contactMe {
+    .content-wrapper {
+      max-width: 100%;
+      padding: 0 12px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 32px 0 24px 0;
+    }
+
+    .contactContent {
+      flex-direction: column;
+      gap: 24px;
+
+      .scrollTop {
+        position: static;
+        margin: 0 auto 16px auto;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .contactText {
+      max-width: 100%;
+      margin: 0 0 16px 0;
+      float: none;
+      font-size: 15px;
+    }
+
+    .mailAndPhone {
+      margin: 0 0 16px 0;
+      align-items: flex-start;
+      font-size: 16px;
+    }
+
+    .contactForm {
+      margin-top: 16px;
+      gap: 14px;
+    }
+
+    .nameAndMailWrapper {
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .yourMessage textarea {
+      min-height: 90px;
+      font-size: 15px;
+    }
+
+    .privacyPolicy {
+      font-size: 14px;
+    }
+
+    .sendButton {
+      font-size: 16px;
+      padding: 8px 24px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .contactMe {
+    .content-wrapper {
+      max-width: 390px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+
+  .contactContentWrapper{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contactMe .mailAndPhone{
+    flex-direction: column-reverse;
+  }
+
+  .contactMe .workTogether{
+    display: flex;
+    font-family: 'Josefin Sans';
+    color: #89BCD9;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 16px;
+
+  }
 }
 

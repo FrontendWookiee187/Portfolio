@@ -7,8 +7,12 @@
     background-image: url(./assets/img/Background.png);
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body{
-  padding: 0 12px;
+  padding: 0;
 }
 
 /* anta-regular - latin */

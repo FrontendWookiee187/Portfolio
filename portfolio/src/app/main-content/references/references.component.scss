@@ -112,11 +112,16 @@
     -ms-overflow-style: none; 
     scrollbar-width: none; 
     padding-bottom: 16px; 
+    width: 390px;      /* Feste Breite für den Scrollbereich */
+    max-width: 100%;
+    
+    
   }
 
   .references .referencesContent{
 
     flex-wrap: nowrap;
+    justify-content: unset;
   }
 
   .referencesContent::-webkit-scrollbar {
@@ -139,7 +144,7 @@
 
   .references h2 {
     text-align: center; 
-    margin-bottom: 24px; 
+    margin-bottom: 38px; 
   }
 
   .teamplayer {

@@ -13,7 +13,8 @@
     "title": "Why me",
     "hello": "Hello {{name}}",
     "locationPrefix": "I am",
-    "location": "based in Ketzin (Berlin/Potsdam area)",
+    "location1": "I am",
+    "location2": "located in Ketzin (Berlin/Potsdam area)",
     "self": "I am just starting my journey as a developer – driven by a passion for technology, creative problem solving, and clean code. With strengths such as analytical thinking, perseverance, and teamwork, I quickly adapt to new challenges. I look forward to applying my knowledge in real projects and developing user-friendly applications as part of a team."
   },
   "mySkills": {

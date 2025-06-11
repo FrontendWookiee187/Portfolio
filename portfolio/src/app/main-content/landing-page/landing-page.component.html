@@ -7,10 +7,10 @@
 <div class="overlay" [class.visible]="menuActive ">
 
 <ul class="overlayMenu">
-<li><a href="#whyMe">Why me</a></li>
-    <li><a href="#mySkills">Skills</a></li>
-    <li><a href="#myProjects">Projects</a></li>
-    <li><a href="#contactMe">Contact</a></li>
+<li><a href="#whyMe">{{ 'navbar.whyMe' | translate }}</a></li>
+    <li><a href="#mySkills">{{ 'navbar.skills' | translate }}</a></li>
+    <li><a href="#myProjects">{{ 'navbar.projects' | translate }}</a></li>
+    <li><a href="#contactMe">{{ 'navbar.contact' | translate }}</a></li>
     <li class="language-switch">
       <a href="#">DE</a>
       <a href="#">EN</a>
@@ -31,8 +31,8 @@
         </div>
         <div class="nameAndJobname">
             <img src="./../../../assets/img/hero/logo_dg1.png" alt="">
-            <div class="nameField" id="nameField">Daniel Grabowski</div>
-            <div class="jobNameField" id="jobNameField">FRONTEND DEVELOPER</div>
+            <div class="nameField" id="nameField">{{ 'landingPage.name' | translate }}</div>
+            <div class="jobNameField" id="jobNameField">{{ 'landingPage.job' | translate }}</div>
 
             <div class="arrowDown"> <a href="#whyMe"><img src="./../../../assets/img/hero/Arrow down.png" alt=""></a></div>
         </div>

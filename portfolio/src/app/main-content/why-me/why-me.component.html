@@ -6,22 +6,17 @@
     <!-- <div>{{ 'why-me.title' | translate }}</div>
     <div>{{ 'why-me.hello' | translate:{name} }}</div> -->
 
-<h1>Why me</h1>
+<h1>{{ 'why-me.title' | translate }}</h1>
 
 <div class="locationAndSelf">
 
 <div class="location">
     <img src="./../../../assets/img/whyme/icon.png" alt="">
-    <span class="iamLocated">I am</span>&nbsp;<span>located in Ketzin (Berlin/Potsdam area)</span>
+    <span class="iamLocated">{{ 'why-me.location1' | translate }}</span>&nbsp;<span>{{ 'why-me.location2' | translate }}</span>
 </div>
 
 <div class="self">
-I'm just starting my journey as a developer – driven
-by a passion for technology, creative problem-solving,
-and clean code. With strengths like analytical thinking,
-perseverance, and teamwork, I quickly adapt to new challenges.
-I'm excited to apply my knowledge in real-world projects and
-contribute to building user-friendly applications as part of a team.
+{{ 'why-me.self' | translate }}
 
    <a href="#contactMe" class="talkLink"><img src="../../../assets/img/whyme/Button Secondary Web.png" alt=""></a>
 </div>

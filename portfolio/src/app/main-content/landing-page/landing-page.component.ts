@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WhyMeComponent } from '../why-me/why-me.component';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [CommonModule, NavbarComponent, WhyMeComponent],
+  imports: [CommonModule, NavbarComponent, WhyMeComponent, TranslatePipe],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })

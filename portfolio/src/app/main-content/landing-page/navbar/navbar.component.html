@@ -3,14 +3,14 @@
 <div class="logo"><img src="./../../../../assets/img/navbar/logo_dark1.png" alt=""> </div>
 
 <div class="links">
-   <a href="#whyMe"><p>Why me</p></a> 
- <a href="#mySkills"><p>Skills</p></a>
-  <a href="#myProjects"><p>Projects</p></a>
-    <a href="#contactMe"><p>Contact</p></a>
+  <a href="#whyMe"><p>{{ 'navbar.whyMe' | translate }}</p></a> 
+  <a href="#mySkills"><p>{{ 'navbar.skills' | translate }}</p></a>
+  <a href="#myProjects"><p>{{ 'navbar.projects' | translate }}</p></a>
+  <a href="#contactMe"><p>{{ 'navbar.contact' | translate }}</p></a>
 </div>
 
 <div class="languageSwitch">
-    <p>DE</p> | <p>EN</p>
+    <p (click)="switchLanguage('de')">DE</p> | <p (click)="switchLanguage('en')">EN</p>
 </div>
 </div>
 

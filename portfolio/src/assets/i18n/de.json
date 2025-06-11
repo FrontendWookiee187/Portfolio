@@ -13,7 +13,8 @@
     "title": "Warum ich",
     "hello": "Guten Tag {{name}}",
     "locationPrefix": "Ich bin",
-    "location": "in Ketzin (Raum Berlin/Potsdam) ansässig",
+    "location1": "Ich bin",
+    "location2": "ansässig in Ketzin (Raum Berlin/Potsdam)",
     "self": "Ich beginne gerade meine Reise als Entwickler – angetrieben von einer Leidenschaft für Technologie, kreatives Problemlösen und sauberen Code. Mit Stärken wie analytischem Denken, Ausdauer und Teamarbeit passe ich mich schnell neuen Herausforderungen an. Ich freue mich darauf, mein Wissen in realen Projekten anzuwenden und als Teil eines Teams benutzerfreundliche Anwendungen zu entwickeln."
   },
   "mySkills": {

@@ -1,6 +1,85 @@
 {
+  "navbar": {
+    "whyMe": "Warum ich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "landingPage": {
+    "name": "Daniel Grabowski",
+    "job": "FRONTEND ENTWICKLER"
+  },
   "why-me": {
+    "title": "Warum ich",
     "hello": "Guten Tag {{name}}",
-    "title": "Übersetzung Deutsch"
+    "locationPrefix": "Ich bin",
+    "location": "in Ketzin (Raum Berlin/Potsdam) ansässig",
+    "self": "Ich beginne gerade meine Reise als Entwickler – angetrieben von einer Leidenschaft für Technologie, kreatives Problemlösen und sauberen Code. Mit Stärken wie analytischem Denken, Ausdauer und Teamarbeit passe ich mich schnell neuen Herausforderungen an. Ich freue mich darauf, mein Wissen in realen Projekten anzuwenden und als Teil eines Teams benutzerfreundliche Anwendungen zu entwickeln."
+  },
+  "mySkills": {
+    "title": "Meine Fähigkeiten",
+    "currentlyLearning": "Ich lerne aktuell"
+  },
+  "myProjects": {
+    "title": "Meine Projekte",
+    "elPolloLoco": "El Pollo Loco",
+    "project2": "Projekt 2",
+    "project3": "Projekt 3",
+    "project4": "Projekt 4",
+    "aboutProject": "Über das Projekt",
+    "duration": "Dauer: {{duration}} Wochen",
+    "description1": "Ein einfaches Jump-and-Run-Spiel auf objektorientierter Basis. Hilf Pepe, Münzen und Chilis zu finden, um gegen kleine Hühner und am Ende das riesige Monsterhuhn zu kämpfen.",
+    "workProcess": "Wie ich meinen Arbeitsprozess organisiert habe",
+    "workProcessText": "Wie hältst du deinen Code sauber und wartbar? Hast du das Projekt in wiederverwendbare Module oder Komponenten unterteilt? Fokus auf Dokumentation, Benennung von Dateien, Variablen, Klassen und Tests.",
+    "whatILearnt": "Was ich gelernt habe",
+    "whatILearntText": "Als jemand, der immer neue Technologien lernen möchte, hat mir dieses Projekt besonders gefallen, weil ich mich intensiv mit einer bestimmten Technologie auseinandersetzen konnte. Nenne Details wie Framework oder Sprache.",
+    "liveTest": "Live Test",
+    "github": "GitHub",
+    "technologies": "Technologien",
+    "testDescription2": "Testbeschreibung 2",
+    "testDescription3": "Testbeschreibung 3",
+    "testDescription4": "Testbeschreibung 4"
+  },
+  "references": {
+    "title": "Brauchen Sie einen Teamplayer?",
+    "subtitle": "Das sagen meine Kollegen über mich",
+    "reference1": {
+      "name": "Sahra Mueller",
+      "project": "Projekt DA Bubble",
+      "quote": "Claudia musste Inhalte im Team entwickeln, formatieren und liefern. Sie ist eine zuverlässige und freundliche Person."
+    },
+    "reference2": {
+      "name": "James Rugman",
+      "project": "Projekt Join",
+      "quote": "Claudia ist eine zuverlässige und freundliche Person. Arbeitet strukturiert und schreibt klaren Code. Ich empfehle sie als Kollegin."
+    },
+    "reference3": {
+      "name": "Evelyn Marx",
+      "project": "Projekt Sharkie",
+      "quote": "Sie ist eine vertrauenswürdige Teamplayerin und kann mit Termindruck umgehen. Strukturiertes Arbeiten und klarer Code."
+    },
+    "linkedIn": "LinkedIn Profil"
+  },
+  "contactMe": {
+    "title": "Kontakt",
+    "workTogether": "Lass uns zusammenarbeiten!",
+    "intro": "Interesse an einer Zusammenarbeit?<br>Ich suche derzeit nach Festanstellungen als Frontend Entwickler. Wenn Sie an Projekten arbeiten, bei denen sauberer Code, Liebe zum Detail und nutzerorientiertes Design wichtig sind, würde ich gerne mitwirken und mit Ihrem Team wachsen.<br>Kontaktieren Sie mich gerne bezüglich Jobangeboten oder Möglichkeiten, bei denen ich einen positiven Beitrag leisten kann.",
+    "yourName": "Ihr Name",
+    "yourEmail": "Ihre E-Mail",
+    "yourMessage": "Ihre Nachricht",
+    "placeholderName": "Ihr Name",
+    "placeholderEmail": "Ihre E-Mail",
+    "placeholderMessage": "Ihre Nachricht",
+    "send": "Senden",
+    "email": "rasen_karotte27@icloud.com",
+    "phone": "0157 123 456 68",
+    "privacyPolicy": "Ich habe die Datenschutzerklärung gelesen und akzeptiere sie.",
+    "errorName": "Bitte geben Sie Ihren Namen ein.",
+    "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "errorMessage": "Bitte geben Sie eine Nachricht ein."
+  },
+  "footer": {
+    "legalNotice": "Impressum",
+    "copyright": "© Daniel Grabowski 2025"
   }
 }

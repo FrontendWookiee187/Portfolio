@@ -1,6 +1,85 @@
 {
+  "navbar": {
+    "whyMe": "Why me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "landingPage": {
+    "name": "Daniel Grabowski",
+    "job": "FRONTEND DEVELOPER"
+  },
   "why-me": {
-    "hello": "hello {{name}}",
-    "title": "Translation Demo"
+    "title": "Why me",
+    "hello": "Hello {{name}}",
+    "locationPrefix": "I am",
+    "location": "based in Ketzin (Berlin/Potsdam area)",
+    "self": "I am just starting my journey as a developer – driven by a passion for technology, creative problem solving, and clean code. With strengths such as analytical thinking, perseverance, and teamwork, I quickly adapt to new challenges. I look forward to applying my knowledge in real projects and developing user-friendly applications as part of a team."
+  },
+  "mySkills": {
+    "title": "My Skills",
+    "currentlyLearning": "Currently learning"
+  },
+  "myProjects": {
+    "title": "My Projects",
+    "elPolloLoco": "El Pollo Loco",
+    "project2": "Project 2",
+    "project3": "Project 3",
+    "project4": "Project 4",
+    "aboutProject": "About the project",
+    "duration": "Duration: {{duration}} weeks",
+    "description1": "A simple jump-and-run game based on object-oriented programming. Help Pepe find coins and chilis to fight small chickens and finally the giant monster chicken.",
+    "workProcess": "How I organized my work process",
+    "workProcessText": "How do you keep your code clean and maintainable? Did you split the project into reusable modules or components? Focus on documentation, naming files, variables, classes, and tests.",
+    "whatILearnt": "What I learned",
+    "whatILearntText": "As someone who always wants to learn new technologies, I particularly enjoyed this project because I was able to dive deep into a specific technology. Mention details like framework or language.",
+    "liveTest": "Live Test",
+    "github": "GitHub",
+    "technologies": "Technologies",
+    "testDescription2": "Test description 2",
+    "testDescription3": "Test description 3",
+    "testDescription4": "Test description 4"
+  },
+  "references": {
+    "title": "Need a team player?",
+    "subtitle": "This is what my colleagues say about me",
+    "reference1": {
+      "name": "Sahra Mueller",
+      "project": "Project DA Bubble",
+      "quote": "Claudia had to develop, format, and deliver content in the team. She is a reliable and friendly person."
+    },
+    "reference2": {
+      "name": "James Rugman",
+      "project": "Project Join",
+      "quote": "Claudia is a reliable and friendly person. Works in a structured way and writes clean code. I recommend her as a colleague."
+    },
+    "reference3": {
+      "name": "Evelyn Marx",
+      "project": "Project Sharkie",
+      "quote": "She is a trustworthy team player and can handle time pressure. Structured work and clean code."
+    },
+    "linkedIn": "LinkedIn profile"
+  },
+  "contactMe": {
+    "title": "Contact",
+    "workTogether": "Let's work together!",
+    "intro": "Interested in working together?<br>I am currently looking for permanent positions as a frontend developer. If you are working on projects where clean code, attention to detail, and user-oriented design are important, I would love to contribute and grow with your team.<br>Feel free to contact me regarding job offers or opportunities where I can make a positive impact.",
+    "yourName": "Your name",
+    "yourEmail": "Your email",
+    "yourMessage": "Your message",
+    "placeholderName": "Your name",
+    "placeholderEmail": "Your email",
+    "placeholderMessage": "Your message",
+    "send": "Send",
+    "email": "rasen_karotte27@icloud.com",
+    "phone": "0157 123 456 68",
+    "privacyPolicy": "I have read and accept the privacy policy.",
+    "errorName": "Please enter your name.",
+    "errorEmail": "Please enter a valid email address.",
+    "errorMessage": "Please enter a message."
+  },
+  "footer": {
+    "legalNotice": "Legal Notice",
+    "copyright": "© Daniel Grabowski 2025"
   }
 }

@@ -249,6 +249,28 @@
   }
 }
 
+.scrollTop a {
+  position: relative;
+  display: block;
+  overflow: hidden; // begrenzt das Overlay
+  border-radius: 24px; // exakt wie der Button!
+}
+
+.scrollTop a::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 4px;
+  background: rgba(137, 188, 217, 0.18);
+  border-radius: 24px; // exakt wie der Button!
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.scrollTop a:hover::after {
+  opacity: 1;
+}
+
 @media (max-width: 400px) {
   .contactMe {
     .content-wrapper {

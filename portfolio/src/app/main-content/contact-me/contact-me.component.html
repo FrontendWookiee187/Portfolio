@@ -1,18 +1,13 @@
 <section class="contactMe" id="contactMe">
   <div class="content-wrapper">
-    <h1>Contact Me</h1>
+    <h1>{{ 'contactMe.title' | translate }}</h1>
     <div class="contactContent">
       <!-- Linke Spalte: Text und Kontaktinfos -->
       <div class="contactContentWrapper">
 
-        <div class="workTogether"> Let us work together!</div>
+        <div class="workTogether"> {{ 'contactMe.workTogether' | translate }} <br></div>
 
-        <div class="contactText">
-          Interested in working together?<br>
-          I'm currently looking for full-time opportunities as a Frontend Developer.
-          If you're working on projects where clean code, attention to detail, and user-focused design matter, I’d love to contribute and grow with your team.
-          Feel free to get in touch regarding job offers or opportunities where I can make a positive impact.
-        </div>
+        <div class="contactText" [innerHTML]="'contactMe.intro' | translate"></div>
         <div class="mailAndPhone">
           <div class="mail">
             <img src="assets/img/contact/icon _email.png" alt="">

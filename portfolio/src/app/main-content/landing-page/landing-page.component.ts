@@ -14,6 +14,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class LandingPageComponent {
   isOverlayOpen = false;
   menuActive = false;
+  shapeHovered = false;
 
   toggleOverlay() {
     this.isOverlayOpen = !this.isOverlayOpen;

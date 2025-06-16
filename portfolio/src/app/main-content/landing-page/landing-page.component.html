@@ -25,7 +25,11 @@
     <div class="pictureAndName" id="pictureAndName">
         <div class="picture" id="picture">
                 
-                <img class="shape" src="assets/img/hero/BG_shape.png" alt="">
+                <img class="shape" [class.animated]="shapeHovered" src="assets/img/hero/BG_shape.png" alt="">
+                <div class="shape-hover-area"
+                (mouseenter)="shapeHovered = true"
+                (mouseleave)="shapeHovered = false">              
+                </div>
                 <img class="subjectPic" src="assets/img/hero/subject_3.png" alt="">
 
         </div>
@@ -42,7 +46,7 @@
    
 
     <div class="socialLinks">       
-        <div><img src="assets/img/hero/Email button.png" alt=""></div>
+        <div> <a href="#contactMe"><img src="assets/img/hero/Email button.png" alt=""></a></div>
         <div> <a href="https://github.com/FrontendWookiee187" target="_blank" rel="noopener"> <img src="assets/img/hero/Github button.png" alt=""></a></div>
         <div><a href="https://www.linkedin.com/in/daniel-grabowski-3a1479250/" target="_blank" rel="noopener"><img src="assets/img/hero/Linkedin button.png" alt=""></a></div>
     </div>

@@ -40,9 +40,22 @@
     background: transparent;
   }
 
-  .shape:hover {
-    transform: scale(2.15) rotate(-3deg); 
+  .shape-hover-area {
+    position: absolute;
+    left: 45%;
+    top: 64%;
+    width: 431px;   
+    height: 472px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;    
+    border-radius: 85% / 80%; 
   }
+
+  .shape.animated {
+  transform: scale(2.15) rotate(-3deg);
+}
+
 
   .subjectPic {
     position: absolute;   
@@ -99,6 +112,17 @@
     width: 32px;
     height: 32px;
   }
+}
+
+.socialLinks a img {
+  transition: filter 0.2s, transform 0.2s;
+  background: transparent;
+}
+
+.socialLinks a:hover img {
+  filter: brightness(1.5) drop-shadow(0 0 6px #7fd6ff);
+  transform: scale(1.15);
+  background: transparent;
 }
 
 

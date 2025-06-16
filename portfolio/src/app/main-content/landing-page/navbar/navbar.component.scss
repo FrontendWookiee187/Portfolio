@@ -85,4 +85,24 @@
   color: white;
 }
 
+.links a.active-link p {
+  position: relative;
+  z-index: 1;
+}
+
+.links a.active-link p::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 200%;
+  background: rgb(125, 171, 197);
+  border-radius: 50% / 40%;
+  z-index: -1;
+  opacity: 1;
+  pointer-events: none;
+}
+
 

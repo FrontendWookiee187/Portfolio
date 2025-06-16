@@ -10,10 +10,16 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 })
 export class NavbarComponent {
 
+  activeSection: string | null = null;
+
   constructor(private translate: TranslateService) {}
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
+  }
+
+  setActiveSection(section: string) {
+    this.activeSection = section;
   }
 
 }

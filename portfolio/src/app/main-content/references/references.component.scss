@@ -30,7 +30,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent !important;
+    background-image: none !important;
+
+    transition: 
+    transform 0.5s cubic-bezier(0.4, 0.2, 0.2, 1),
+    filter 0.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+    
+
+    // Hover-Effekt
+  &:hover {
+    transform: rotate(-4deg) translateY(-18px) scale(1.03);
+    filter: brightness(2) saturate(1.1);
+    z-index: 2;
+    background: transparent !important;
+    background-image: none !important;
+  }  
   }
+
+  .referenceBubble,
+.referenceBubble img {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
 
   .referenceBubble img {
     width: 100%;

@@ -10,7 +10,8 @@
   height: 86px;
   margin: 0;
   margin-top: 0;
-  position: relative;
+  position: sticky;   // <--- Hinzufügen
+  top: 0;             // <--- Hinzufügen
   z-index: 20;
 }
 

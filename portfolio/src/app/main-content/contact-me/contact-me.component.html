@@ -47,7 +47,7 @@
             I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.
           </span>
         </div>
-        <button class="sendButton" value="submit">Send</button>
+        <button class="sendButton" value="submit" [disabled]="!contactForm.valid">{{ 'contactMe.send' | translate }}</button>
       </form>
       <div class="scrollTop">
         <a href="#heroSection"><img src="assets/img/contact/Arrow_up.png" alt="Scroll to top"></a>

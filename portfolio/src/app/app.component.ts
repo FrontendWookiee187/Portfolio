@@ -9,13 +9,14 @@ import {
     TranslatePipe,
     TranslateDirective
 } from "@ngx-translate/core";
+import { NavbarComponent } from './main-content/landing-page/navbar/navbar.component';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MainContentComponent, FooterComponent, WhyMeComponent, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, RouterOutlet, MainContentComponent, FooterComponent, WhyMeComponent, TranslatePipe, TranslateDirective, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

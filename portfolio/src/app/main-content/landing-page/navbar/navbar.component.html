@@ -4,9 +4,9 @@
 
 <div class="links">
   <a href="#whyMe" [class.active-link]="activeSection === 'whyMe'" (click)="setActiveSection('whyMe')"><p>{{ 'navbar.whyMe' | translate }}</p></a> 
-  <a href="#mySkills"><p>{{ 'navbar.skills' | translate }}</p></a>
-  <a href="#myProjects"><p>{{ 'navbar.projects' | translate }}</p></a>
-  <a href="#contactMe"><p>{{ 'navbar.contact' | translate }}</p></a>
+  <a href="#mySkills" [class.active-link]="activeSection === 'mySkills'" (click)="setActiveSection('mySkills')"><p>{{ 'navbar.skills' | translate }}</p></a>
+  <a href="#myProjects" [class.active-link]="activeSection === 'myProjects'" (click)="setActiveSection('myProjects')"><p>{{ 'navbar.projects' | translate }}</p></a>
+  <a href="#contactMe" [class.active-link]="activeSection === 'contactMe'" (click)="setActiveSection('contactMe')"><p>{{ 'navbar.contact' | translate }}</p></a>
 </div>
 
 <div class="languageSwitch">

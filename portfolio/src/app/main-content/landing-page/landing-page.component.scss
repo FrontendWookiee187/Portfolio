@@ -588,6 +588,10 @@
     
   }
 
+  .shape-hover-area{
+    display: none;
+  }
+
 }
 
 @media (min-width: 630.01px) {
@@ -598,6 +602,83 @@
 .overlayMenu{
   display: none;
 }
+}
+
+@media (max-width: 590px){
+
+  .overlay{
+    left: 78px;
+    top: 97px;
+  }
+
+}
+
+  @media (max-width: 444px){
+
+  .overlay{
+    width: 320px;
+    height: 361px;
+    top: 126px;
+  }
+
+}
+
+
+
+@media (max-width: 417px){
+
+.overlay{
+    left: 40px;
+    
+  }
+
+}
+
+@media (max-width: 374px){
+
+.overlay{
+    left: 15px;
+    width: 280px;
+    top: 102px;    
+  }
+
+  .overlayMenu {
+    margin-top: -32px; // Menü nach oben verschieben, Wert ggf. anpassen
+  }
+
+  .picture {
+    width: 310px;
+    height: 310px;
+    min-width: unset;
+    margin: 16px auto;
+    top: 20px;
+
+    .shape {
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1.0);
+    }
+
+    .subjectPic {
+      width: 200px;
+      height: 245px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+  }
+
+  .pictureAndName {
+  margin-bottom: 12px; // Reduziere diesen Wert nach Bedarf
+}
+
+.picture {
+  margin-bottom: 0; // Falls hier ein Abstand gesetzt ist, ggf. auf 0 oder einen kleineren Wert setzen
+}
+
 }
 
 

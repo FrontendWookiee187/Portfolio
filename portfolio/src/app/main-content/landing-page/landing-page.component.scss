@@ -168,6 +168,12 @@
 }
 }
 
+@media (max-width: 964px){
+  .arrowDown{
+    bottom: -30%;
+  }
+}
+
 @media (max-width: 900px) {
   .pictureAndName {
     flex-direction: row;

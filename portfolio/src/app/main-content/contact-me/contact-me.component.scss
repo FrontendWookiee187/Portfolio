@@ -155,7 +155,14 @@
         color: #fff;
       }
     }
+    
   }
+
+  .privacyPolicy img:hover {
+  filter: brightness(1.3) drop-shadow(0 0 4px #89bcd9);
+  // box-shadow: 0 0 0 2px #89bcd9;
+  background: rgba(137, 188, 217, 0.10);
+}
 
   .sendButton {
     margin-top: 18px;

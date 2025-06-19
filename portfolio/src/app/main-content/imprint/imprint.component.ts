@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-imprint',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })
-export class ImprintComponent {
+export class ImprintComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+    window.scrollTo({ top: 600, behavior: 'auto' });
+  }
 
 }

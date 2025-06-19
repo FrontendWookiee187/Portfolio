@@ -14,6 +14,9 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class ContactMeComponent {
 
+  checked = false;
+  checkboxError = false;
+
   http = inject(HttpClient);
 
   contactData = {

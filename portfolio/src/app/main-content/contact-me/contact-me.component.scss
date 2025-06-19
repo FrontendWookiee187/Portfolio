@@ -144,8 +144,10 @@
 
     img {
       width: 18px;
-      height: 18px;
-      margin-right: 4px;
+  height: 18px;
+  margin-right: 4px;
+  object-fit: contain; // sorgt für gleichmäßige Skalierung
+  display: inline-block;
     }
 
     a {
@@ -162,6 +164,12 @@
   filter: brightness(1.3) drop-shadow(0 0 4px #89bcd9);
   // box-shadow: 0 0 0 2px #89bcd9;
   background: rgba(137, 188, 217, 0.10);
+}
+
+.privacyPolicy img[src$="checkbox_checked2.png"] {
+  width: 32px;
+  height: 32px;
+  background: none;
 }
 
   .sendButton {

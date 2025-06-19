@@ -41,8 +41,8 @@
           }
         
         </div>
-        <div class="privacyPolicy" (click)="checked = !checked">
-          <img [src]="checked ? 'assets/img/contact/Property 1=Checked.png' : 'assets/img/contact/Check box.png'" alt="Checkbox">
+        <div class="privacyPolicy" (click)="onCheckboxClick($event)">
+          <img [src]="checkboxError ? 'assets/img/contact/Property 1=error.png' : (checked ? 'assets/img/contact/Property 1=Checked.png' : 'assets/img/contact/Check box.png')" alt="Checkbox">
           <span>
             I've read the <a routerLink="/imprint">privacy policy</a> and agree to the processing of my data as outlined.
           </span>

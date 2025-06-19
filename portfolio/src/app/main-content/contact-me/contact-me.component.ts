@@ -39,6 +39,14 @@ export class ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
+
+    if (!this.checked) {
+    this.checkboxError = true;
+    return;
+  }
+  this.checkboxError = false;
+
+
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -55,6 +63,14 @@ export class ContactMeComponent {
 
       ngForm.resetForm();
     }
+
+    this.checked = false;
   }
+
+  onCheckboxClick(event: Event) {
+  event.stopPropagation();
+  this.checked = !this.checked;
+  this.checkboxError = false;
+}
 
 }

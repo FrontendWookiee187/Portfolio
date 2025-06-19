@@ -99,6 +99,14 @@
   }
 }
 
+.hero-logo {
+  transition: transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.hero-logo:hover {
+  transform: scaleX(1.25) scaleY(1.05);
+}
+
 .socialLinks {
   position: absolute;
   right: 48px;

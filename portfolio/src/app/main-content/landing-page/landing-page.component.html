@@ -12,8 +12,9 @@
     <li><a href="#myProjects">{{ 'navbar.projects' | translate }}</a></li>
     <li><a href="#contactMe">{{ 'navbar.contact' | translate }}</a></li>
     <li class="language-switch">
-      <a href="#">DE</a>
-      <a href="#">EN</a>
+      <p (click)="switchLanguage('de')">DE</p>
+        <span>|</span>
+      <p (click)="switchLanguage('en')">EN</p>
     </li>
 </ul>
 

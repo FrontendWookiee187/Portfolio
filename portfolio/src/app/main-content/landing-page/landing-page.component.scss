@@ -169,6 +169,19 @@
   justify-content: space-between;
 }
 
+.language-switch p{
+  background: transparent;
+  background-image: none;
+  cursor: pointer;
+}
+
+.language-switch span{
+  background: transparent;
+  background-image: none;
+  line-height: 0.8;
+  
+}
+
 @media (max-width: 1300px){
 .pictureAndName{
   margin-left: 80px;

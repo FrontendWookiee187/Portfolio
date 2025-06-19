@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WhyMeComponent } from '../why-me/why-me.component';
-import { TranslatePipe } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -12,6 +12,8 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
+  constructor(private translate: TranslateService) {}
+
   isOverlayOpen = false;
   menuActive = false;
   shapeHovered = false;
@@ -19,6 +21,10 @@ export class LandingPageComponent {
   toggleOverlay() {
     this.isOverlayOpen = !this.isOverlayOpen;
     this.menuActive = !this.menuActive;
+  }
+
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
   }
 
 }

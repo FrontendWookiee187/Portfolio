@@ -1,3 +1,10 @@
+.whyMe {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
 .content-wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -8,6 +15,7 @@
   justify-content: center;
   padding: 0 16px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1{
@@ -47,22 +55,42 @@ h1{
     font-family: 'Josefin Sans';
     font-size: 20px;
     white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-items: center;
       >img{
         width: 64px;
         height: 53px;
         align-self: center;
-        
+        flex-shrink: 0;
+        margin-right: 8px;
       }
 }
 
+.locationText {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 0;
+  flex: 1;
+}
+
 .iamLocated,
-  span {
-    align-self: center; // Text bleibt auf der gleichen Höhe wie das Bild
-  }
+.locationPlace {
+  align-self: center;
+}
 
 .iamLocated{
   color: #89BCD9;
   font-weight: 700;
+  white-space: nowrap;
+}
+
+.locationPlace {
+  color: white;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .self{
@@ -78,10 +106,13 @@ h1{
   max-width: 400px; 
   text-align: left; 
   align-items: end;
+  overflow: hidden;
+  box-sizing: border-box;
     >img{
       margin-top: 18px;
       height: 54px;
       width: 134px;
+      flex-shrink: 0;
     }
 }
 
@@ -117,16 +148,22 @@ h1{
   flex-direction: column;
   gap: 36px;
   margin-right: 0;
-  
+  align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .location {
     margin-left: 0; 
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 
 .self{
   align-items: center;
   text-align: center;
+  max-width: 100%;
 }
 
 }
@@ -200,41 +237,158 @@ h1{
 
 }
 
-@media (max-width: 320px){
-  .content-wrapper {
-    padding: 0 8px;
+@media (max-width: 394px){
+  .whyMe {
+    overflow-x: hidden;
   }
 
-  h1 {
-    font-size: 28px;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    text-align: center;
+  .content-wrapper {
+    padding: 0 4px;
+    overflow-x: hidden;
+    max-width: calc(100vw - 8px);
+  }
+
+  .whyMeContent {
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   .locationAndSelf{
-    gap: 24px;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    flex-direction: column;
     align-items: center;
+    max-width: 100%;
   }
 
   .location{
-    font-size: 14px;
+    font-size: 13px;
+    height: auto;
+    min-height: 35px;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
     >img{
-      width: 28px;
-      height: 35px;
+      width: 24px;
+      height: 30px;
+      margin-right: 6px;
+      flex-shrink: 0;
     }
   }
 
+  .locationText {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .iamLocated{
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .locationPlace {
+    font-size: 13px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: center;
+    max-width: 100%;
+  }
+
   .self{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.3;
     text-align: center;
+    max-width: 100%;
+    min-width: 0;
+    padding: 0 8px;
     >img{
-      height: 48px;
-      width: 120px;
+      height: 42px;
+      width: 108px;
       margin-top: 12px;
+    }
+  }
+
+  h1 {
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 320px){
+  .whyMe {
+    overflow-x: hidden;
+  }
+
+  .content-wrapper {
+    padding: 0 2px;
+    max-width: calc(100vw - 4px);
+  }
+
+  h1 {
+    font-size: 22px;
+    margin: 12px 0;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .locationAndSelf{
+    gap: 12px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .location{
+    font-size: 11px;
+    justify-content: center;
+    height: auto;
+    min-height: 30px;
+    max-width: 100%;
+    >img{
+      width: 20px;
+      height: 25px;
+      margin-right: 4px;
+    }
+  }
+
+  .locationText {
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    text-align: center;
+  }
+
+  .iamLocated{
+    font-size: 11px;
+  }
+
+  .locationPlace {
+    font-size: 11px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .self{
+    font-size: 11px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 4px;
+    >img{
+      height: 35px;
+      width: 90px;
+      margin-top: 8px;
     }
   }
 }

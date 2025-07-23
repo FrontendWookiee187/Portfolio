@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+app-why-me,
+app-my-skills,
+app-my-projects,
+app-references,
+app-contact-me {
+  display: block;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}

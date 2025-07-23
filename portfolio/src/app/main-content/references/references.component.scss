@@ -109,7 +109,205 @@
   }
 }
 
+@media (max-width: 450px){
 
+  .references {
+    padding: 24px 0 32px 0;
+  }
+
+  .content-wrapper {
+    max-width: calc(100vw - 32px);
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .referencesContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    overflow: visible;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .referenceBubble {
+    width: 280px;
+    height: 280px;
+    max-width: calc(100vw - 64px);
+    flex-shrink: 0;
+  }
+
+  .referenceBubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .referenceText {
+    width: 75%;
+  }
+
+  .referenceName {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+
+  .referenceProject {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .referenceQuote {
+    font-size: 13px;
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+
+  .referenceLink {
+    font-size: 13px;
+  }
+
+  h2 {
+    margin-bottom: 32px;
+    font-size: 28px;
+  }
+
+  .teamplayer {
+    font-size: 24px;
+  }
+
+  .colleagues {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px){
+
+  .references {
+    padding: 20px 0 28px 0;
+  }
+
+  .content-wrapper {
+    max-width: calc(100vw - 24px);
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    padding: 0 8px;
+    line-height: 1.2;
+  }
+
+  .teamplayer {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .colleagues {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-top: 6px;
+  }
+
+  .referenceBubble {
+    width: 240px;
+    height: 240px;
+    max-width: calc(100vw - 32px);
+  }
+
+  .referenceText {
+    width: 70%;
+  }
+
+  .referenceName {
+    font-size: 16px;
+  }
+
+  .referenceProject {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .referenceQuote {
+    font-size: 12px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .referenceLink {
+    font-size: 12px;
+  }
+
+  .referencesContent {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 340px){
+
+  .references {
+    padding: 20px 0 28px 0;
+  }
+
+  .content-wrapper {
+    max-width: calc(100vw - 16px);
+    padding: 0 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .teamplayer {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+
+  .colleagues {
+    font-size: 11px;
+    margin-top: 6px;
+    line-height: 1.2;
+  }
+
+  .referenceBubble {
+    width: 220px;
+    height: 220px;
+    max-width: calc(100vw - 24px);
+  }
+
+  .referenceText {
+    width: 68%;
+  }
+
+  .referenceName {
+    font-size: 15px;
+  }
+
+  .referenceProject {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .referenceQuote {
+    font-size: 11px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+  }
+
+  .referenceLink {
+    font-size: 11px;
+  }
+
+  .referencesContent {
+    gap: 20px;
+  }
+}
 
 @media (max-width: 570px){
 

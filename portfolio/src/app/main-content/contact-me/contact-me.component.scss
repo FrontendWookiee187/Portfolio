@@ -302,10 +302,41 @@ textarea.ng-invalid.ng-submitted::placeholder {
 @media (max-width: 400px) {
   .contactMe {
     .content-wrapper {
-      max-width: 390px;
+      max-width: 100%;
       width: 100%;
       margin: 0 auto;
-      padding: 0;
+      padding: 0 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 24px 0 20px 0;
+    }
+
+    .contactContent {
+      gap: 20px;
+    }
+
+    .contactForm {
+      gap: 16px;
+    }
+
+    .nameAndMailWrapper {
+      gap: 14px;
+    }
+
+    .yourMessage textarea {
+      min-height: 100px;
+      font-size: 14px;
+    }
+
+    .privacyPolicy {
+      font-size: 13px;
+    }
+
+    .sendButton {
+      font-size: 15px;
+      padding: 8px 20px;
     }
   }
 
@@ -316,16 +347,149 @@ textarea.ng-invalid.ng-submitted::placeholder {
 
   .contactMe .mailAndPhone{
     flex-direction: column-reverse;
+    font-size: 15px;
   }
 
   .contactMe .workTogether{
     display: flex;
     font-family: 'Josefin Sans';
     color: #89BCD9;
-    font-size: 20px;
+    font-size: 18px;
     justify-content: center;
     margin-top: 16px;
+  }
+}
 
+@media (max-width: 360px) {
+  .contactMe {
+    .content-wrapper {
+      padding: 0 14px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 20px 0 18px 0;
+    }
+
+    .contactContent {
+      gap: 18px;
+    }
+
+    .contactText {
+      font-size: 14px;
+    }
+
+    .contactForm {
+      gap: 14px;
+    }
+
+    .nameAndMailWrapper {
+      gap: 12px;
+    }
+
+    .yourMessage textarea {
+      min-height: 90px;
+      font-size: 13px;
+    }
+
+    .privacyPolicy {
+      font-size: 12px;
+    }
+
+    .sendButton {
+      font-size: 14px;
+      padding: 6px 18px;
+    }
+  }
+
+  .contactMe .mailAndPhone{
+    font-size: 14px;
+  }
+
+  .contactMe .workTogether{
+    font-size: 16px;
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contactMe {
+    .content-wrapper {
+      padding: 0 12px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 18px 0 16px 0;
+    }
+
+    .contactContent {
+      gap: 16px;
+    }
+
+    .contactText {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .contactForm {
+      gap: 12px;
+    }
+
+    .nameAndMailWrapper {
+      gap: 10px;
+      
+      .yourName, .yourEmail {
+        label {
+          font-size: 12px;
+        }
+        input {
+          font-size: 14px;
+          padding: 8px 14px;
+        }
+      }
+    }
+
+    .yourMessage {
+      label {
+        font-size: 12px;
+      }
+      textarea {
+        min-height: 80px;
+        font-size: 12px;
+        padding: 10px 14px;
+      }
+    }
+
+    .privacyPolicy {
+      font-size: 11px;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .sendButton {
+      font-size: 13px;
+      padding: 6px 16px;
+    }
+  }
+
+  .contactMe .mailAndPhone{
+    font-size: 13px;
+    gap: 10px;
+    
+    .mail, .phone {
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .contactMe .workTogether{
+    font-size: 15px;
+    margin-top: 12px;
   }
 }
 

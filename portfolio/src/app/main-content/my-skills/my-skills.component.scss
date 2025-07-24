@@ -405,3 +405,10 @@ h1{
     display: block;
   }
 }
+
+@media (max-width: 490px){
+  .learningBubble{
+    top: 40%;
+  }
+}
+

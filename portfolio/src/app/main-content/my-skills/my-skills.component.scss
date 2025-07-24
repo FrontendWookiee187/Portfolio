@@ -160,6 +160,10 @@ h1{
     padding: 10px 28px;
     font-size: 14px;
   }
+
+  .learningBubble{
+    top: 40%;
+  }
 }
 
 @media (max-width: 375px){
@@ -182,15 +186,7 @@ h1{
     height: 70px;
   }
 
-  .learningIcons {
-    gap: 6px !important;
-
-    img {
-      width: 18px !important;
-      height: 18px !important;
-      display: block !important;
-    }
-  }
+  
 
   .learningDescription {
     font-size: 11px;
@@ -314,8 +310,8 @@ h1{
     justify-items: center;
 
     img {
-      width: 60px !important;
-      height: 60px !important;
+      width: 60px ;
+      height: 60px ;
     }
   }
 
@@ -326,15 +322,15 @@ h1{
     display: flex;
     justify-content: flex-end;
     
-    img {
-      position: absolute !important;
-      right: 0 !important;
-      top: 50% !important;
-      transform: translateY(-50%) !important;
-      width: 120px !important;
-      height: 120px !important;
-      display: block !important;
-      z-index: 1 !important;
+    .bubble {
+      position: absolute ;
+      right: 0 ;
+      top: 50% ;
+      transform: translateY(-50%) ;
+      width: 120px ;
+      height: 120px ;
+      display: block ;
+      z-index: 1 ;
     }
   }
 
@@ -367,34 +363,33 @@ h1{
   }
 
   .learningBubble {
-    position: absolute !important;
-    right: 0 !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    background: transparent !important;
-    border-radius: 0 !important;
-    width: 120px !important;
-    height: 120px !important;
-    flex-shrink: 0 !important;
-    z-index: 2 !important;
+    position: absolute ;
+    right: 0 ;
+    top: 30% ;
+    transform: translateY(-50%) ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    background: transparent ;
+    border-radius: 0 ;
+    width: 120px ;
+    height: 120px ;   ex: 2 ;
   }
 
   .learningIcons {
-    gap: 8px !important;
-    margin: 0 !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
+    gap: 8px ;
+    margin: 0 ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    flex-direction: row; 
+    width: fit-content;
 
     img {
-      width: 24px !important;
-      height: 24px !important;
-      display: block !important;
+      width: 24px ;
+      height: 24px ;
+      display: block ;
+     
     }
   }
 

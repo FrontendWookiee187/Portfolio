@@ -72,6 +72,11 @@
             color: white;
         }
     }
+    
+    span {
+        margin: 0;
+        transform: translateY(-2px);
+    }
 }
 
 .content-wrapper {

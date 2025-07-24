@@ -114,10 +114,8 @@ h1{
   }
 
   .currentlyLearning{
-
- display: none; 
-
-}
+    display: none; 
+  }
 }
 
 @media (max-width: 490px){
@@ -142,4 +140,39 @@ h1{
 
   
 
+}
+
+.currentlyLearning {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.currentlyLearningText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    background: transparent;
+    line-height: 1.4;
+  }
 }

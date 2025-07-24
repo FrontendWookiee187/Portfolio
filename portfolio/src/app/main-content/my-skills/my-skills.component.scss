@@ -101,21 +101,25 @@ h1{
     }
   }
 
-  .currentlyLearning {
-    max-width: 280px;
+  .learningContent {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
   }
 
-  .learningIcons {
-    gap: 24px;
+  .learningBubble {
+    width: 100px;
+    height: 100px;
+  }
 
-    img {
-      width: 32px;
-      height: 32px;
-    }
+  .learningIcons img {
+    width: 22px;
+    height: 22px;
   }
 
   .learningDescription {
     font-size: 13px;
+    text-align: center;
   }
 }
 
@@ -131,21 +135,18 @@ h1{
     }
   }
 
-  .currentlyLearning {
-    max-width: 240px;
-  }
-
   .learningTitle {
     font-size: 16px;
   }
 
-  .learningIcons {
-    gap: 20px;
+  .learningBubble {
+    width: 80px;
+    height: 80px;
+  }
 
-    img {
-      width: 28px;
-      height: 28px;
-    }
+  .learningIcons img {
+    width: 20px;
+    height: 20px;
   }
 
   .learningDescription {
@@ -170,20 +171,21 @@ h1{
     }
   }
 
-  .currentlyLearning {
-    max-width: 200px;
-  }
-
   .learningTitle {
     font-size: 14px;
   }
 
+  .learningBubble {
+    width: 70px;
+    height: 70px;
+  }
+
   .learningIcons {
-    gap: 16px;
+    gap: 6px;
 
     img {
-      width: 24px;
-      height: 24px;
+      width: 18px;
+      height: 18px;
     }
   }
 
@@ -316,38 +318,71 @@ h1{
 
   .currentlyLearning {
     width: 100%;
-    max-width: 320px;
+    max-width: 100%;
+    position: relative;
+    display: block;
     
     img {
-      width: 100% !important;
-      height: auto !important;
+      display: none; // Hide the bubble background
     }
   }
 
   .currentlyLearningText {
-    width: 90%;
-    gap: 16px;
+    position: static;
+    transform: none;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
   .learningTitle {
     font-size: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .learningContent {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 400px;
+    flex-direction: row-reverse; // Text links, Bubble rechts
+  }
+
+  .learningBubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(137, 188, 217, 0.2);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
   }
 
   .learningIcons {
-    gap: 32px;
-    margin: 16px 0;
+    gap: 12px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
     img {
-      width: 36px;
-      height: 36px;
+      width: 28px;
+      height: 28px;
     }
   }
 
   .learningDescription {
     font-size: 14px;
     line-height: 1.4;
-    max-width: 95%;
+    text-align: left;
+    flex: 1;
   }
 
   .mobileContactButton {

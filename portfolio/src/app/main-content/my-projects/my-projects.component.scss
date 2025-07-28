@@ -307,6 +307,16 @@
 }
 
 
+@media (max-width: 900px) {
+  .myProjectsHeadlines > div {
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .aboutProject {
+    border-radius: 16px;
+  }
+}
+
 @media (max-width: 800px){
 
   .contentProjectOne,
@@ -344,7 +354,6 @@
 
     font-size: 18px !important;
     // margin-bottom: 0;
-    z-index: 1;
     padding: 18px 30px !important;
 
   }
@@ -365,8 +374,8 @@
 .myProjects .projectThree,
 .myProjects .projectFour {
   padding: 18px 16px !important;
+  border-radius: 12px 12px 0 0;
 }
-
 
 .myProjects .myProjectsHeadlines{
 
@@ -376,6 +385,7 @@
 
 .aboutProject{
   padding: 0;
+  border-radius: 12px;
 }
 
 .technologiesAndScreenshot{

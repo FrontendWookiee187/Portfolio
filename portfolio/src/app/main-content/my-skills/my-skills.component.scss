@@ -36,40 +36,59 @@ h1{
 }
 
 .skillSet{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 24px;
+    max-width: 600px;
+    margin: 0 auto;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
+    .skillItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 16px;
 
-        >img{ 
-        width: 28px;         
-          height: 100px;  
-          flex: 0 0 calc(33.33% - 16px);
-          box-sizing: border-box; 
+        img {
+            width: 80px;         
+            height: 80px;
+            object-fit: contain;
         }
 
-        
+        .skillName {
+            color: #89BCD9;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
 }
 
 @media (max-width: 800px){
 
   .mySkillsContent img {
-    width: 308px; /* Verkleinert die Breite der Bilder */
-    height: auto; /* Passt die Höhe proportional an */
+    width: 308px;
+    height: auto;
   }
 
   .skillSet{
-    width: 200px;
-  }
+    max-width: 400px;
+    gap: 24px 16px;
 
-  .skillSet img {
-    width: 40px; /* Verkleinert die Breite der Bilder */
-    height: auto; /* Passt die Höhe proportional an */
-  }
+    .skillItem {
+      padding: 12px;
+      
+      img {
+        width: 60px;
+        height: 60px;
+      }
 
-  .skillSet {
-    gap: 12px; /* Reduziert den Abstand zwischen den Bildern */
+      .skillName {
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -92,12 +111,21 @@ h1{
 @media (max-width: 605px){
 
   .skillSet {
-    max-width: 280px;
-    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 300px;
+    gap: 20px 12px;
 
-    img {
-      width: 50px !important;
-      height: 50px !important;
+    .skillItem {
+      padding: 8px;
+      
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .skillName {
+        font-size: 12px;
+      }
     }
   }
 
@@ -373,7 +401,7 @@ h1{
     background: transparent ;
     border-radius: 0 ;
     width: 120px ;
-    height: 120px ;   ex: 2 ;
+    height: 120px ;
   }
 
   .learningIcons {

@@ -213,6 +213,14 @@
         border-color: #ff4444;
       }
     }
+    
+    // Styling für Fehlermeldungen
+    .error-message {
+      color: #ff4444;
+      font-size: 12px;
+      margin-top: 4px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
   }
 
   .privacyPolicy {

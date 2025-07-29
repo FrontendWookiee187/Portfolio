@@ -46,7 +46,7 @@
                     [ngClass]="{'error': fieldErrors.message, 'ng-submitted': contactForm.submitted && contactForm.controls['message'].invalid}"></textarea>
           
           @if (!message.valid && message.touched) {
-            <span>Please enter message</span>
+            <span class="error-message">Please enter message</span>
           }
         
         </div>

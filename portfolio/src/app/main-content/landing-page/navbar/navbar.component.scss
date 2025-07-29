@@ -51,6 +51,15 @@
     
     font-family: 'Josefin Sans';
     font-weight: 500;
+    
+    a {
+        cursor: pointer !important;
+        
+        p {
+            cursor: pointer !important;
+            margin: 0;
+        }
+    }
 }
 
 

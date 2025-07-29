@@ -99,39 +99,58 @@
         padding: 10px 18px;
         border: 2px solid #89BCD9;
         border-radius: 22px;
-        background: transparent;
+        background: transparent !important;
+        background-color: transparent !important;
         color: #fff;
         font-size: 16px;
         font-family: 'Josefin Sans', sans-serif;
         outline: none;
 
-        // Browser-Autofill überschreiben
-        &:-webkit-autofill {
-          -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
-          -webkit-text-fill-color: #fff !important;
+        // ALLE möglichen Zustände mit transparentem Background überschreiben
+        &,
+        &:hover,
+        &:focus,
+        &:active,
+        &:valid,
+        &:invalid,
+        &:checked,
+        &:disabled,
+        &:enabled,
+        &:not(:placeholder-shown),
+        &:placeholder-shown,
+        &.ng-valid,
+        &.ng-invalid,
+        &.ng-touched,
+        &.ng-untouched,
+        &.ng-dirty,
+        &.ng-pristine,
+        &.ng-pending {
           background: transparent !important;
-          border: 2px solid #89BCD9 !important;
+          background-color: transparent !important;
+          -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+          box-shadow: 0 0 0 1000px transparent inset !important;
         }
 
-        &:-webkit-autofill:hover {
+        // Browser-Autofill überschreiben - alle Varianten
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active,
+        &:-webkit-autofill:valid,
+        &:-webkit-autofill:invalid {
           -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
           -webkit-text-fill-color: #fff !important;
           background: transparent !important;
+          background-color: transparent !important;
           border: 2px solid #89BCD9 !important;
+          transition: background-color 5000s ease-in-out 0s !important;
         }
 
-        &:-webkit-autofill:focus {
-          -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
-          -webkit-text-fill-color: #fff !important;
+        // Firefox Autofill
+        &:-moz-autofill {
           background: transparent !important;
-          border: 2px solid #89BCD9 !important;
-        }
-
-        &:-webkit-autofill:active {
-          -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
-          -webkit-text-fill-color: #fff !important;
-          background: transparent !important;
-          border: 2px solid #89BCD9 !important;
+          background-color: transparent !important;
+          box-shadow: 0 0 0 1000px transparent inset !important;
         }
       }
     }

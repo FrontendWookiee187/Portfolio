@@ -25,10 +25,10 @@ export class ContactMeComponent {
     message: "",
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://www.grabowski-daniel.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

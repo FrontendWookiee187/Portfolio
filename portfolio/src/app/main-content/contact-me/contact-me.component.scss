@@ -104,6 +104,35 @@
         font-size: 16px;
         font-family: 'Josefin Sans', sans-serif;
         outline: none;
+
+        // Browser-Autofill überschreiben
+        &:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+          -webkit-text-fill-color: #fff !important;
+          background: transparent !important;
+          border: 2px solid #89BCD9 !important;
+        }
+
+        &:-webkit-autofill:hover {
+          -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+          -webkit-text-fill-color: #fff !important;
+          background: transparent !important;
+          border: 2px solid #89BCD9 !important;
+        }
+
+        &:-webkit-autofill:focus {
+          -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+          -webkit-text-fill-color: #fff !important;
+          background: transparent !important;
+          border: 2px solid #89BCD9 !important;
+        }
+
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+          -webkit-text-fill-color: #fff !important;
+          background: transparent !important;
+          border: 2px solid #89BCD9 !important;
+        }
       }
     }
   }

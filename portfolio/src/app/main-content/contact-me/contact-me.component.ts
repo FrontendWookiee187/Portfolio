@@ -17,6 +17,13 @@ export class ContactMeComponent {
   checked = false;
   checkboxError = false;
 
+  // Objekt zur Verfolgung von Feldfehlern
+  fieldErrors = {
+    name: false,
+    email: false,
+    message: false
+  };
+
   http = inject(HttpClient);
 
   contactData = {
@@ -72,5 +79,46 @@ export class ContactMeComponent {
   this.checked = !this.checked;
   this.checkboxError = false;
 }
+
+  // Methode zur Behandlung von Blur-Events auf Eingabefeldern
+  onFieldBlur(fieldName: string, event: Event) {
+    const target = event.target as HTMLInputElement | HTMLTextAreaElement;
+    const value = target.value.trim();
+    
+    switch (fieldName) {
+      case 'name':
+        this.fieldErrors.name = !value || value.length < 1;
+        break;
+      case 'email':
+        const emailPattern = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+        this.fieldErrors.email = !value || !emailPattern.test(value);
+        break;
+      case 'message':
+        this.fieldErrors.message = !value || value.length < 4;
+        break;
+    }
+  }
+
+  // Methode zur Behandlung von Input-Events (Eingabe wird getippt)
+  onFieldInput(fieldName: string) {
+    // Fehler löschen, sobald der Benutzer anfängt zu tippen
+    switch (fieldName) {
+      case 'name':
+        if (this.contactData.name.trim().length > 0) {
+          this.fieldErrors.name = false;
+        }
+        break;
+      case 'email':
+        if (this.contactData.email.trim().length > 0) {
+          this.fieldErrors.email = false;
+        }
+        break;
+      case 'message':
+        if (this.contactData.message.trim().length >= 4) {
+          this.fieldErrors.message = false;
+        }
+        break;
+    }
+  }
 
 }

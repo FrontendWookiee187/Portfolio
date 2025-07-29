@@ -158,9 +158,11 @@ h1{
     max-width: 240px;
     gap: 10px;
 
-    img {
-      width: 45px !important;
-      height: 45px !important;
+    .skillItem {
+      img {
+        width: 45px;
+        height: 45px;
+      }
     }
   }
 
@@ -194,15 +196,54 @@ h1{
   }
 }
 
+@media (max-width: 390px){
+
+  .skillSet {
+    max-width: 220px;
+    gap: 8px 6px;
+
+    .skillItem {
+      padding: 8px;
+
+      img {
+        width: 42px;
+        height: 42px;
+      }
+
+      .skillName {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .content-wrapper {
+    max-width: 320px;
+  }
+}
+
 @media (max-width: 375px){
   .skillSet {
-    max-width: 200px;
-    gap: 8px;
+    max-width: 280px;
+    gap: 6px 4px;
 
-    img {
-      width: 40px !important;
-      height: 40px !important;
+    .skillItem {
+      padding: 4px;
+
+      img {
+        width: 36px;
+        height: 36px;
+      }
+
+      .skillName {
+        font-size: 10px;
+      }
     }
+  }
+
+  .content-wrapper {
+    max-width: 300px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 
   .learningTitle {
@@ -213,17 +254,32 @@ h1{
     width: 70px;
     height: 70px;
   }
+}
 
-  
+@media (max-width: 336px){
 
-  .learningDescription {
-    font-size: 11px;
-    line-height: 1.2;
+  .skillSet {
+    max-width: 260px;
+    gap: 4px 2px;
+
+    .skillItem {
+      padding: 2px;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+
+      .skillName {
+        font-size: 9px;
+      }
+    }
   }
 
-  .mobileContactButton .letsTalkBtn {
-    padding: 8px 24px;
-    font-size: 13px;
+  .content-wrapper {
+    max-width: 280px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
 }
 

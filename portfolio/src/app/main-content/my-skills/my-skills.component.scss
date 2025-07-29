@@ -408,8 +408,14 @@ h1{
   }
 }
 
-@media (max-width: 740px) and (min-width: 661px) {
+@media (max-width: 720px) and (min-width: 661px) {
   .currentlyLearning {
+    .learningTitle {
+      font-size: 16px;
+      margin-top: 12px;
+      margin-bottom: -15px;
+    }
+
     .learningDescription {
       max-width: 75%;
       padding-right: 20px;
@@ -419,7 +425,7 @@ h1{
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 664px) {
   .mySkills {
     padding: 24px 16px;
   }

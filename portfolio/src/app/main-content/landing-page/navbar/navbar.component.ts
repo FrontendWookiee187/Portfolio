@@ -22,4 +22,23 @@ export class NavbarComponent {
     this.activeSection = section;
   }
 
+  scrollToSection(sectionId: string, event: Event) {
+    event.preventDefault();
+    
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarHeight = 86; // Höhe der Navbar
+      const offset = 20; // Zusätzlicher Abstand
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navbarHeight - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      
+      this.setActiveSection(sectionId);
+    }
+  }
+
 }

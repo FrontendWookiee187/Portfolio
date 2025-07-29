@@ -6,10 +6,10 @@
 </a>
 
 <div class="links">
-  <a href="#whyMe" [class.active-link]="activeSection === 'whyMe'" (click)="setActiveSection('whyMe')"><p>{{ 'navbar.whyMe' | translate }}</p></a> 
-  <a href="#mySkills" [class.active-link]="activeSection === 'mySkills'" (click)="setActiveSection('mySkills')"><p>{{ 'navbar.skills' | translate }}</p></a>
-  <a href="#myProjects" [class.active-link]="activeSection === 'myProjects'" (click)="setActiveSection('myProjects')"><p>{{ 'navbar.projects' | translate }}</p></a>
-  <a href="#contactMe" [class.active-link]="activeSection === 'contactMe'" (click)="setActiveSection('contactMe')"><p>{{ 'navbar.contact' | translate }}</p></a>
+  <a (click)="scrollToSection('whyMe', $event)" [class.active-link]="activeSection === 'whyMe'"><p>{{ 'navbar.whyMe' | translate }}</p></a> 
+  <a (click)="scrollToSection('mySkills', $event)" [class.active-link]="activeSection === 'mySkills'"><p>{{ 'navbar.skills' | translate }}</p></a>
+  <a (click)="scrollToSection('myProjects', $event)" [class.active-link]="activeSection === 'myProjects'"><p>{{ 'navbar.projects' | translate }}</p></a>
+  <a (click)="scrollToSection('contactMe', $event)" [class.active-link]="activeSection === 'contactMe'"><p>{{ 'navbar.contact' | translate }}</p></a>
 </div>
 
 <div class="languageSwitch">

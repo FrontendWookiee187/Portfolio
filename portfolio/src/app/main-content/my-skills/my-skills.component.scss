@@ -306,11 +306,32 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 
+    transform 0.5s cubic-bezier(0.4, 0.2, 0.2, 1),
+    filter 0.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+
+  // Hover-Effekt
+  &:hover {
+    transform: rotate(-4deg) translateY(-18px) scale(1.03);
+    filter: brightness(2) saturate(1.1);
+    z-index: 2;
+  }
 
   img {
     width: 100%;
     height: auto;
     display: block;
+  }
+}
+
+// Hover-Animation für Bildschirme unter 630px deaktivieren (Burger-Menü aktiv)
+@media (max-width: 630px) {
+  .currentlyLearning {
+    &:hover {
+      transform: none !important;
+      filter: none !important;
+      z-index: auto !important;
+    }
   }
 }
 

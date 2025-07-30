@@ -81,7 +81,9 @@
     "privacyPolicy": "I have read and accept the privacy policy.",
     "errorName": "Please enter your name.",
     "errorEmail": "Please enter a valid email address.",
-    "errorMessage": "Please enter a message."
+    "errorMessage": "Please enter a message.",
+    "successMessage": "Thank you for your message! I will get back to you as soon as possible.",
+    "successTitle": "Message sent successfully!"
   },
   "footer": {
     "legalNotice": "Legal notice & Privacy policy",

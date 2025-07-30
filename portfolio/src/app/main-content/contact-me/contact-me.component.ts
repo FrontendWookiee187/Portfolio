@@ -16,6 +16,7 @@ export class ContactMeComponent {
 
   checked = false;
   checkboxError = false;
+  showSuccessMessage = false;
 
   // Objekt zur Verfolgung von Feldfehlern
   fieldErrors = {
@@ -58,8 +59,10 @@ export class ContactMeComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
+            this.showSuccessMessage = true;
+            this.hideSuccessMessageAfterDelay();
+            this.resetContactData();
           },
           error: (error) => {
             console.error(error);
@@ -67,8 +70,10 @@ export class ContactMeComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
+      this.showSuccessMessage = true;
+      this.hideSuccessMessageAfterDelay();
+      this.resetContactData();
     }
 
     this.checked = false;
@@ -119,6 +124,22 @@ export class ContactMeComponent {
         }
         break;
     }
+  }
+
+  // Methode zum Zurücksetzen der Kontaktdaten
+  resetContactData() {
+    this.contactData = {
+      name: "",
+      email: "",
+      message: "",
+    };
+  }
+
+  // Methode zum automatischen Ausblenden der Erfolgsmeldung nach 5 Sekunden
+  hideSuccessMessageAfterDelay() {
+    setTimeout(() => {
+      this.showSuccessMessage = false;
+    }, 5000);
   }
 
 }

@@ -21,6 +21,14 @@
         
       </div>
       <!-- Rechte Spalte: Formular -->
+      <!-- Erfolgsmeldung -->
+      @if (showSuccessMessage) {
+        <div class="success-message">
+          <div class="success-title">{{ 'contactMe.successTitle' | translate }}</div>
+          <div class="success-text">{{ 'contactMe.successMessage' | translate }}</div>
+        </div>
+      }
+      
       <form class="contactForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="nameAndMailWrapper">
           <div class="yourName">

@@ -223,6 +223,43 @@
     }
   }
 
+  // Styling für Erfolgsmeldung
+  .success-message {
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+    border: 2px solid #16a34a;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 32px 0;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(34, 197, 94, 0.3);
+    animation: slideIn 0.5s ease-out;
+
+    .success-title {
+      font-family: 'Anta', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .success-text {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .privacyPolicy {
     display: flex;
     align-items: center;

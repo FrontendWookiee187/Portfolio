@@ -109,6 +109,17 @@
   }
 }
 
+// Hover-Animation für Bildschirme unter 630px deaktivieren (Burger-Menü aktiv)
+@media (max-width: 630px) {
+  .referenceBubble {
+    &:hover {
+      transform: none !important;
+      filter: none !important;
+      z-index: auto !important;
+    }
+  }
+}
+
 @media (max-width: 450px){
 
   .references {

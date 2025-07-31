@@ -242,6 +242,12 @@ footer .content-wrapper {
   }
 }
 
+@media (max-width: 450px) {
+  .legalNoticeAndCopyright{
+    flex-direction: column !important;
+  }
+}
+
 @media (max-width: 400px) {
   footer .content-wrapper {
     display: flex;

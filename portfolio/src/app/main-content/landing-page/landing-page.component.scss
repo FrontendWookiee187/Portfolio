@@ -290,30 +290,30 @@
 
 @media (max-width: 890px) {
   .pictureAndName {
-    gap: 12px; 
+    gap: 40px; // Deutlich vergrößert von 12px für bessere Raumnutzung
     align-items: center; 
     justify-content: center; 
   }
 
   .picture {
-    width: 200px; 
-    height: auto; 
+    width: 380px; // Gleiche Größe wie in 900px Media Query
+    height: 600px; // Gleiche Höhe wie in 900px Media Query
     position: relative;
     .shape {
       position: absolute;
       left: -10%; 
-      top: -5%; 
+      top: 29%; // Gleiche Position wie in 900px Media Query
       width: 100%;
-      height: auto;
+      height: 100%; // Feste Höhe statt auto
       object-fit: contain;
       z-index: 0; 
-      transform: scale(1.3); 
+      transform: scale(1.8); // Gleiche Skalierung wie in 900px Media Query
     }
     .subjectPic {
-      width: 200px; 
+      width: 340px; // Gleiche Größe wie in 900px Media Query
       height: auto; 
-      left: 55px; 
-      top: 10px;
+      left: 7%; // Gleiche Position wie in 900px Media Query
+      top: 211px; // Gleiche Position wie in 900px Media Query
       z-index: 1; 
       object-fit: cover;
     }
@@ -323,42 +323,49 @@
     text-align: center; 
     width: 100%; 
     display: block;
+    gap: 20px; // Hinzugefügt für bessere Abstände
+    
+    > img {
+      width: 90px; // Vergrößertes Logo
+      height: 95px; 
+    }
+    
     .nameField {
-      font-size: 24px; 
-      margin-bottom: 18px;
+      font-size: 32px; // Deutlich vergrößert von 24px
+      margin-bottom: 20px; // Vergrößert von 18px
     }
     .jobNameField {
       display: block; 
-      font-size: 20px; 
+      font-size: 26px; // Deutlich vergrößert von 20px
       text-align: center; 
-      width: 150px; 
+      width: 200px; // Vergrößert von 150px
       margin: 0 auto; 
       word-break: break-word; 
       white-space: normal; 
     }
     .arrowDown {
-      margin-top: 12px; 
-    width: 20px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-        
+      margin-top: 20px; // Vergrößert von 12px
+      width: 32px; // Vergrößert von 20px
+      height: 75px; // Vergrößert entsprechend
+      left: 50%; 
+      transform: translateX(-50%); 
     }
   }
 
   .socialLinks {
     right: 32px; 
-    top: 8%; 
-    gap: 8px; 
+    top: 12%; // Angepasste Position
+    gap: 12px; // Vergrößert von 8px
     img {
-      width: 20px; 
-      height: 20px; 
+      width: 28px; // Deutlich vergrößert von 20px
+      height: 28px; // Deutlich vergrößert von 20px
     }
   }
 
   .socialLinks > div > img,
   .socialLinks > a > img {
-    width: 20px; 
-    height: 20px; 
+    width: 28px; // Deutlich vergrößert von 20px
+    height: 28px; // Deutlich vergrößert von 20px
   }
 
 }
@@ -370,7 +377,7 @@
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 780px) {
   .heroSection {
     
     min-height: auto;
@@ -681,7 +688,7 @@
 
 }
 
-@media (min-width: 630.01px) {
+@media (min-width: 780.01px) {
 .burgerMenu{
   display: none;
 }
@@ -694,7 +701,7 @@
 @media (max-width: 590px){
 
   .overlay{
-    left: 78px;
+    left: 122px;
     top: 97px;
   }
 
@@ -724,9 +731,9 @@
 @media (max-width: 374px){
 
 .overlay{
-    left: 15px;
+    left: 25px;
     width: 280px;
-    top: 102px;    
+    top: 141px;    
   }
 
   .overlayMenu {

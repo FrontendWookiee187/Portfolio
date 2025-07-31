@@ -7,10 +7,10 @@
 <div class="overlay" [class.visible]="menuActive ">
 
 <ul class="overlayMenu">
-<li><a href="#whyMe">{{ 'navbar.whyMe' | translate }}</a></li>
-    <li><a href="#mySkills">{{ 'navbar.skills' | translate }}</a></li>
-    <li><a href="#myProjects">{{ 'navbar.projects' | translate }}</a></li>
-    <li><a href="#contactMe">{{ 'navbar.contact' | translate }}</a></li>
+<li><a (click)="toggleOverlay()" href="#whyMe">{{ 'navbar.whyMe' | translate }}</a></li>
+    <li><a (click)="toggleOverlay()" href="#mySkills">{{ 'navbar.skills' | translate }}</a></li>
+    <li><a (click)="toggleOverlay()" href="#myProjects">{{ 'navbar.projects' | translate }}</a></li>
+    <li><a (click)="toggleOverlay()" href="#contactMe">{{ 'navbar.contact' | translate }}</a></li>
     <li class="language-switch">
       <p (click)="switchLanguage('de')">DE</p>
         <span class="language-divider">|</span>

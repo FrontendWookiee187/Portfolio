@@ -53,6 +53,12 @@ h1{
             width: 80px;         
             height: 80px;
             object-fit: contain;
+            transition: filter 0.3s cubic-bezier(0.4, 0.2, 0.2, 1);
+
+            &:hover {
+                filter: brightness(2) saturate(1.1);
+                
+            }
         }
 
         .skillName {
@@ -331,6 +337,12 @@ h1{
       transform: none !important;
       filter: none !important;
       z-index: auto !important;
+    }
+  }
+
+  .skillItem img {
+    &:hover {
+      filter: none !important;
     }
   }
 }

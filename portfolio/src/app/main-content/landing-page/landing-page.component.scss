@@ -16,16 +16,16 @@
   align-items: center;
   justify-content: center; // Inhalt zentrieren statt flex-start
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px; // Vergrößert von 1200px für mehr Platz
   margin: 0 auto;  
-  gap: 112px;
+  gap: 150px; // Vergrößert von 112px für mehr Abstand zwischen Bild und Text
 }
 
 .picture {
   position: relative;
-  width: 350px;
-  height: 550px;
-  min-width: 350px;
+  width: 420px; // Vergrößert von 350px
+  height: 650px; // Vergrößert von 550px
+  min-width: 420px; // Entsprechend angepasst
 
   .shape {
     position: absolute;
@@ -61,7 +61,7 @@
     position: absolute;   
     z-index: 2;
     background: none;    
-    height: 547px;
+    height: 647px; // Vergrößert entsprechend der neuen Picture-Höhe
     left: 0%;
     top: 19%;
     object-fit: cover;             
@@ -73,24 +73,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 32px; // Vergrößert von 24px für mehr Abstand zwischen Elementen
   margin-left: 5%;
-  min-height: 300px;
+  min-height: 350px; // Vergrößert von 300px
 
   > img {
-    width: 106px;
-    height: 113px;
+    width: 126px; // Vergrößert von 106px
+    height: 133px; // Vergrößert von 113px
     
   }
   .nameField {
-    font-size: 42px;
+    font-size: 48px; // Vergrößert von 42px
     font-family: 'Anta', sans-serif;
     color: #fff;
     line-height: 1;
     text-align: center; 
   }
   .jobNameField {
-    font-size: 32px;
+    font-size: 36px; // Vergrößert von 32px
     font-family: 'Josefin Sans', sans-serif;
     color: #fff;
     letter-spacing: 2px;
@@ -115,11 +115,11 @@
   transform: translateY(-40%);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px; // Vergrößert von 16px
 
   > div > img {
-    width: 32px;
-    height: 32px;
+    width: 38px; // Vergrößert von 32px
+    height: 38px; // Vergrößert von 32px
   }
 }
 

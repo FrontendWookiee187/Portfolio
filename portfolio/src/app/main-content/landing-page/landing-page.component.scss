@@ -1,5 +1,5 @@
 .heroSection {
-  // height: 100vh;
+  height: calc(100vh - 86px); // Landing Page Höhe minus Navbar-Höhe, damit Navbar am unteren Bildschirmrand sticky ist
   width: 100%;  
   display: flex;
   flex-direction: column;

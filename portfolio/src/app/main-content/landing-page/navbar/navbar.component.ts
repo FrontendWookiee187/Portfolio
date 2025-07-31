@@ -58,7 +58,17 @@ export class NavbarComponent {
     const element = document.getElementById(sectionId);
     if (element) {
       const navbarHeight = 86; // Höhe der Navbar
-      const offset = 20; // Zusätzlicher Abstand
+      let offset = 20; // Standardabstand
+      
+      // Für die "Why me" Sektion einen größeren Offset verwenden
+      if (sectionId === 'whyMe') {
+        offset = 0.5; // Größerer Abstand für "Why me" Sektion
+      }
+
+      if (sectionId === 'mySkills') {
+        offset = 1; // Kleinerer Abstand für "My Skills" Sektion, damit sie tiefer angezeigt wird
+      }
+      
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - navbarHeight - offset;
 

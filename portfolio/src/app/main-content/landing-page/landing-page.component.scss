@@ -199,35 +199,35 @@
 @media (max-width: 900px) {
   .pictureAndName {
     flex-direction: row;
-    gap: 16px; 
+    gap: 80px; // Deutlich vergrößert für bessere Raumnutzung
     align-items: center;
     justify-content: center; 
-    margin-top: 24px;
+    margin-top: 60px; // Zurück auf ursprünglichen Wert
   }
 
   .picture {
-    width: 250px; 
-    height: auto; 
+    width: 380px; // Deutlich vergrößert - fast so groß wie Desktop
+    height: 600px; // Feste Höhe statt auto, damit Prozent-Werte funktionieren
     position: relative; 
-    top: -138px; 
+    top: -80px; // Picture-Bereich deutlich nach oben verschoben
     .shape {
       position: absolute;
-      left: -18%; 
-      top: -10%; 
+      left: -10%; 
+      top: 29%; // Jetzt funktionieren Prozent-Werte wieder
       width: 100%;
-      height: auto;
+      height: 100%; // Feste Höhe für bessere Kontrolle
       object-fit: contain;
       z-index: 0; 
-      transform: scale(1.3);       
+      transform: scale(1.8); // Deutlich vergrößert für bessere Raumnutzung      
     }
     .shape.animated {
-  transform: scale(1.5) rotate(-3deg);
+  transform: scale(2.0) rotate(-3deg); // Entsprechend angepasst
   }
     .subjectPic {
-      width: 215px; 
+      width: 340px; // Deutlich vergrößert entsprechend des größeren Picture-Containers
       height: auto; 
-      left: 4%; 
-      top: 19px;
+      left: 7%; 
+      top: 211px;
       z-index: 1; 
       object-fit: cover;
     }
@@ -239,36 +239,43 @@
     margin-left: 0; 
     text-align: center; 
     position: relative; 
-    z-index: 2; 
+    z-index: 2;
+    gap: 28px; // Vergrößerte Abstände zwischen Elementen
+    
+    > img {
+      width: 110px; // Vergrößertes Logo
+      height: 116px; 
+    }
+    
     .nameField {
-      font-size: 28px; 
+      font-size: 40px; // Deutlich vergrößert - näher an Desktop-Größe
     }
     .jobNameField {
-      font-size: 24px;
+      font-size: 32px; // Deutlich vergrößert - näher an Desktop-Größe
     }
     .arrowDown {
       position: relative;
-      margin-top: 16px; 
-      margin-bottom: 16px;
+      margin-top: 32px; // Vergrößerte Abstände
+      margin-bottom: 24px; 
       left: 1%;
       transform: translateX(-50%);
-      width: 38px;
-      height: 89px;
+      width: 44px; // Vergrößert
+      height: 98px; // Vergrößert
     }
   }
 
   .socialLinks {
      position: absolute;
     right: 48px; 
-    top: 10%; 
+    top: 15%; // Angepasste Position
     transform: none;
     display: flex;
     flex-direction: column; 
-    gap: 12px;
+    gap: 18px; // Vergrößerte Abstände
 
      img {
-      width: 24px; 
-      height: 24px; 
+      width: 34px; // Deutlich vergrößert - näher an Desktop-Größe
+      height: 34px; 
     }
     
     z-index: 5;
@@ -276,12 +283,12 @@
 
   .socialLinks > div > img,
   .socialLinks > a > img {
-    width: 24px; 
-    height: 24px; 
+    width: 34px; // Deutlich vergrößert
+    height: 34px; 
   }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 890px) {
   .pictureAndName {
     gap: 12px; 
     align-items: center; 
@@ -357,7 +364,7 @@
 }
 
 
-@media (max-width: 775px) {
+@media (max-width: 890px) {
   .socialLinks{
     right: 15px;
   }

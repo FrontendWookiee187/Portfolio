@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center; // Inhalt zentrieren statt flex-start
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;  
@@ -29,8 +29,8 @@
 
   .shape {
     position: absolute;
-    left: -8%;
-    top: 10%;
+    left: -7%;
+    top: 23%;
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -62,8 +62,8 @@
     z-index: 2;
     background: none;    
     height: 547px;
-    left: -2%;
-    top: 5%;
+    left: 0%;
+    top: 19%;
     object-fit: cover;             
   }
 }
@@ -167,7 +167,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; // Inhalt horizontal zentrieren
 }
 
 .language-switch p{

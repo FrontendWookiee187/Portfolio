@@ -90,7 +90,7 @@
       flex-direction: column;
       label {
         color: #89BCD9;
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 4px;
         font-family: 'Josefin Sans', sans-serif;
         
@@ -186,7 +186,7 @@
     flex-direction: column;
     label {
       color: #89BCD9;
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 4px;
       font-family: 'Josefin Sans', sans-serif;
       
@@ -217,7 +217,7 @@
     // Styling für Fehlermeldungen
     .error-message {
       color: #ff4444;
-      font-size: 12px;
+      font-size: 16px;
       margin-top: 4px;
       font-family: 'Josefin Sans', sans-serif;
     }
@@ -266,7 +266,7 @@
     gap: 8px;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 15px;
+    font-size: 16px;
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
 
@@ -358,7 +358,7 @@
       max-width: 100%;
       margin: 0 0 16px 0;
       float: none;
-      font-size: 15px;
+      font-size: 16px;
     }
 
     .mailAndPhone {
@@ -379,11 +379,11 @@
 
     .yourMessage textarea {
       min-height: 90px;
-      font-size: 15px;
+      font-size: 16px;
     }
 
     .privacyPolicy {
-      font-size: 14px;
+      font-size: 16px;
     }
 
     .sendButton {
@@ -464,7 +464,7 @@ textarea.ng-invalid.ng-submitted::placeholder {
     }
 
     .sendButton {
-      font-size: 15px;
+      font-size: 16px;
       padding: 8px 20px;
     }
   }
@@ -476,7 +476,7 @@ textarea.ng-invalid.ng-submitted::placeholder {
 
   .contactMe .mailAndPhone{
     flex-direction: column-reverse;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .contactMe .workTogether{
@@ -505,7 +505,7 @@ textarea.ng-invalid.ng-submitted::placeholder {
     }
 
     .contactText {
-      font-size: 14px;
+      font-size: 16px;
     }
 
     .contactForm {
@@ -522,17 +522,17 @@ textarea.ng-invalid.ng-submitted::placeholder {
     }
 
     .privacyPolicy {
-      font-size: 12px;
+      font-size: 16px;
     }
 
     .sendButton {
-      font-size: 14px;
+      font-size: 16px;
       padding: 6px 18px;
     }
   }
 
   .contactMe .mailAndPhone{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .contactMe .workTogether{
@@ -570,10 +570,10 @@ textarea.ng-invalid.ng-submitted::placeholder {
       
       .yourName, .yourEmail {
         label {
-          font-size: 12px;
+          font-size: 16px;
         }
         input {
-          font-size: 14px;
+          font-size: 16px;
           padding: 8px 14px;
         }
       }
@@ -581,17 +581,17 @@ textarea.ng-invalid.ng-submitted::placeholder {
 
     .yourMessage {
       label {
-        font-size: 12px;
+        font-size: 16px;
       }
       textarea {
         min-height: 80px;
-        font-size: 12px;
+        font-size: 16px;
         padding: 10px 14px;
       }
     }
 
     .privacyPolicy {
-      font-size: 13px;
+      font-size: 16px;
       img {
         width: 16px;
         height: 16px;
@@ -617,7 +617,7 @@ textarea.ng-invalid.ng-submitted::placeholder {
   }
 
   .contactMe .workTogether{
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 12px;
   }
 }

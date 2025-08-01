@@ -98,7 +98,7 @@ h1{
   }
 }
 
-@media (max-width: 660px){
+@media (max-width: 664px){
 
   .content-wrapper{
     margin: 0;
@@ -482,7 +482,7 @@ h1{
     max-width: 320px;
     justify-items: center;
     margin-left: 0;
-    margin-right: 0%;
+    margin-right: 5%;
 
     img {
       width: 60px ;
@@ -587,7 +587,7 @@ h1{
 
 @media (max-width: 490px){
   .skillSet{
-    margin-right: 0;
+    margin-right: 10%;
   }
 }
 
@@ -596,4 +596,12 @@ h1{
     top: 40%;
   }
 }
+
+@media (max-width: 440px){
+  .skillSet{
+    margin-right: 0%;
+  }
+}
+
+
 

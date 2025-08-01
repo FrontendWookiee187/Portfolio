@@ -383,7 +383,7 @@
 
 @media (max-width: 780px) {
   .heroSection {
-    
+    height: 100vh;
     min-height: auto;
     width: 100%;
     padding: 16px 0;
@@ -705,6 +705,7 @@
 @media (max-width: 630px) {
 .heroSection {
   height: 100vh;
+  margin-bottom: 13px;
 }
 }
 
@@ -715,6 +716,12 @@
     top: 97px;
   }
 
+}
+
+@media (max-width: 445px) {
+  .heroSection {
+    height: 100vh;
+  }
 }
 
   @media (max-width: 444px){

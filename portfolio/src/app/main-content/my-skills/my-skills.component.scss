@@ -103,7 +103,7 @@ h1{
   .content-wrapper{
     margin: 0;
     margin-top: 16px;
-    margin-right: 24px;
+    margin-right: 10%;
     max-width: 390px;
   }
 
@@ -481,6 +481,8 @@ h1{
     width: 100%;
     max-width: 320px;
     justify-items: center;
+    margin-left: 0;
+    margin-right: 20%;
 
     img {
       width: 60px ;
@@ -580,6 +582,12 @@ h1{
 
   .mobileContactButton {
     display: block;
+  }
+}
+
+@media (max-width: 490px){
+  .skillSet{
+    margin-right: 0;
   }
 }
 

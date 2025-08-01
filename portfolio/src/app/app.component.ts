@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import {
@@ -22,7 +22,7 @@ export class AppComponent {
   title = 'portfolio';
   showLandingPage = true;
 
-  constructor(private translate: TranslateService, private router: Router) {
+  constructor(private translate: TranslateService, private router: Router, private viewportScroller: ViewportScroller) {
         this.translate.addLangs(['de', 'en']);
         this.translate.setDefaultLang('en');
         this.translate.use('en');
@@ -33,6 +33,13 @@ export class AppComponent {
         ).subscribe((event) => {
           if (event instanceof NavigationEnd) {
             this.showLandingPage = !event.url.includes('/imprint');
+            
+            // Scroll to top when navigating to imprint
+            if (event.url.includes('/imprint')) {
+              setTimeout(() => {
+                this.viewportScroller.scrollToPosition([0, 0]);
+              }, 100);
+            }
           }
         });
     }

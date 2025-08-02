@@ -20,7 +20,8 @@
   "mySkills": {
     "title": "My Skills",
     "learningTitle": "I am currently learning",
-    "currentlyLearning": "I'm currently deepening my skills in Angular, TypeScript, and JavaScript to build more advanced and scalable frontend applications."
+    "currentlyLearning": "I'm currently deepening my skills in Angular, TypeScript, and JavaScript to build more advanced and scalable frontend applications.",
+    "letsTalk": "Let's talk"
   },
   "myProjects": {
     "title": "My Projects",

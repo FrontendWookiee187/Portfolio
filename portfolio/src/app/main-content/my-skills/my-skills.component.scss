@@ -80,7 +80,7 @@ h1{
   }
 
   .skillSet{
-    max-width: 400px;
+    // max-width: 400px;
     gap: 24px 16px;
 
     .skillItem {
@@ -103,8 +103,8 @@ h1{
   .content-wrapper{
     margin: 0;
     margin-top: 16px;
-    margin-right: 10%;
-    max-width: 390px;
+    // margin-right: 10%;
+    // max-width: 390px;
   }
 
   .mySkillsContent{
@@ -170,7 +170,7 @@ h1{
 @media (max-width: 490px){
 
   .skillSet {
-    max-width: 240px;
+    // max-width: 240px;
     gap: 10px;
 
     .skillItem {
@@ -223,7 +223,7 @@ h1{
 @media (max-width: 440px){
 
   .skillSet {
-    max-width: 220px;
+    // max-width: 220px;
     gap: 8px 6px;
 
     .skillItem {
@@ -247,7 +247,7 @@ h1{
 
 @media (max-width: 375px){
   .skillSet {
-    max-width: 280px;
+    // max-width: 280px;
     gap: 6px 4px;
 
     .skillItem {
@@ -283,7 +283,7 @@ h1{
 @media (max-width: 336px){
 
   .skillSet {
-    max-width: 260px;
+    // max-width: 260px;
     gap: 4px 2px;
 
     .skillItem {
@@ -479,10 +479,10 @@ h1{
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     width: 100%;
-    max-width: 320px;
+    // max-width: 320px;
     justify-items: center;
     margin-left: 0;
-    margin-right: 5%;
+    // margin-right: 5%;
 
     img {
       width: 60px ;
@@ -587,7 +587,7 @@ h1{
 
 @media (max-width: 490px){
   .skillSet{
-    margin-right: 10%;
+    // margin-right: 10%;
   }
 }
 

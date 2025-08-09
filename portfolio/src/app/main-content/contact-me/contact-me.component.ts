@@ -6,11 +6,10 @@ import { RouterModule } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-contact-me',
-  standalone: true,
-  imports: [CommonModule, FormsModule, TranslatePipe, RouterModule],
-  templateUrl: './contact-me.component.html',
-  styleUrl: './contact-me.component.scss'
+    selector: 'app-contact-me',
+    imports: [CommonModule, FormsModule, TranslatePipe, RouterModule],
+    templateUrl: './contact-me.component.html',
+    styleUrl: './contact-me.component.scss'
 })
 export class ContactMeComponent {
 

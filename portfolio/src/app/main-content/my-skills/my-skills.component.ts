@@ -7,11 +7,10 @@ interface Skill {
 }
 
 @Component({
-  selector: 'app-my-skills',
-  standalone: true,
-  imports: [TranslatePipe],
-  templateUrl: './my-skills.component.html',
-  styleUrl: './my-skills.component.scss'
+    selector: 'app-my-skills',
+    imports: [TranslatePipe],
+    templateUrl: './my-skills.component.html',
+    styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
   /** Array of main technical skills */

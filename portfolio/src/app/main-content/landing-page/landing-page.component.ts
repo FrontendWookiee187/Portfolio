@@ -5,11 +5,10 @@ import { WhyMeComponent } from '../why-me/why-me.component';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-landing-page',
-  standalone: true,
-  imports: [CommonModule, NavbarComponent, WhyMeComponent, TranslatePipe],
-  templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.scss'
+    selector: 'app-landing-page',
+    imports: [CommonModule, NavbarComponent, WhyMeComponent, TranslatePipe],
+    templateUrl: './landing-page.component.html',
+    styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
   constructor(private translate: TranslateService) {}

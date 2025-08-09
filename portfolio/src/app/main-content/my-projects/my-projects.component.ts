@@ -4,11 +4,10 @@ import { ElementRef, ViewChild } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-my-projects',
-  standalone: true,
-  imports: [CommonModule, TranslatePipe],
-  templateUrl: './my-projects.component.html',
-  styleUrl: './my-projects.component.scss'
+    selector: 'app-my-projects',
+    imports: [CommonModule, TranslatePipe],
+    templateUrl: './my-projects.component.html',
+    styleUrl: './my-projects.component.scss'
 })
 export class MyProjectsComponent {
   @ViewChild('contentProjectOne') contentProjectOne!: ElementRef<HTMLDivElement>;

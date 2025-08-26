@@ -35,7 +35,7 @@
     "workProcess": "How I organized my work process",
     "workProcessText": "How do you keep your code clean and maintainable? Did you split the project into reusable modules or components? Focus on documentation, naming files, variables, classes, and tests.",
     "whatILearnt": "What I learned",
-    "whatILearntText": "As someone who always wants to learn new technologies, I particularly enjoyed this project because I was able to dive deep into a specific technology. Mention details like framework or language.",
+    "whatILearntText": "As someone who always wants to learn new technologies, I particularly enjoyed this project because I was able to dive deep into a specific technology.",
     "description2": "A modern Kanban-style task management application built with Angular and Firebase. Join helps teams organize, assign, and track tasks in real-time using drag & drop functionality and responsive design.",
     "workProcessText2": "I structured the project into reusable Angular components and services. Clear file and folder naming conventions, TypeScript interfaces, and SCSS modules ensured scalability and maintainability. Firebase was used for backend services like authentication and real-time data handling.",
     "whatILearntText2": "I deepened my understanding of Angular 19 and TypeScript 5, especially reactive forms, routing, and animations. Working with Firebase taught me about authentication, Firestore database structure, and deploying modern web apps with real-time features.",
